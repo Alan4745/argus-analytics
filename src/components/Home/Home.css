@@ -1,0 +1,224 @@
+.home-background {
+  background-color: #f2f0fa;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  text-align: center;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  top: 100px; /* Posiciona el contenido a 100px desde la parte superior */
+  z-index: 2;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(100px);
+}
+
+.ellipse-1 {
+  width: 276px;
+  height: 170px;
+  top: 20%;
+  left: 10%;
+  background-color: rgba(171, 58, 224, 0.2);
+  box-shadow: 0 0 20px rgba(171, 58, 224, 0.2);
+}
+
+.ellipse-2 {
+  width: 256px;
+  height: 256px;
+  bottom: 25%;
+  right: 15%;
+  background-color: rgba(77, 46, 219, 0.2);
+  box-shadow: 0 0 50px rgba(77, 46, 219, 0.2);
+}
+
+.ellipse-3 {
+  width: 256px;
+  height: 200px;
+  top: 60%;
+  left: 10%;
+  background-color: rgba(171, 58, 224, 0.2);
+  box-shadow: 0 0 20px rgba(171, 58, 224, 0.2);
+}
+
+.text-home-h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 72px;
+}
+
+.home-texto-content {
+  color: black;
+  font-size: 22px;
+  font-family: "SF Pro Text", sans-serif;
+}
+
+/* Estilo para el texto con color degradado */
+.gradient-text {
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 72px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.spacer {
+  height: 16px;
+}
+
+.large-spacer {
+  height: 40px; /* Ajusta el tamaño del espaciador a 40px */
+}
+
+/* Botón con fondo degradado */
+.gradient-button-home {
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  margin-right: 16px;
+  font-size: 18px;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+}
+
+.gradient-button-home:hover {
+  transform: scale(1.1); /* Escala al 110% */
+}
+
+/* Contenedor del borde degradado */
+.outline-gradient-container {
+  display: inline-block;
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  padding: 2px; /* Espesor del borde degradado */
+  border-radius: 8px; /* Borde redondeado */
+  margin: 0; /* Elimina el margen por defecto */
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Botón con borde degradado */
+.outline-gradient-button {
+  background: #f2f0fa; /* Fondo del botón transparente */
+  color: black;
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  border-radius: 7px; /* Borde redondeado */
+  cursor: pointer;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: bold;
+  width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+}
+
+.outline-gradient-container:hover {
+  transform: scale(1.1); /* Escala al 110% */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+
+.image-container {
+  text-align: center;
+  position: relative;
+  margin-top: 140px; /* Espacio superior para separar del contenido anterior */
+}
+
+.main-image {
+  width: 80%;
+  height: 500px;
+  background-color: transparent; /* Color de fondo para el espacio de imagen */
+  margin: 0 auto; /* Centra la imagen en el contenedor */
+}
+
+.floating-image-left,
+.floating-image-right {
+  position: absolute;
+  bottom: 5%;
+}
+
+.floating-image-left {
+  width: 300px;
+  height: 170px;
+  left: 30px;
+}
+
+.floating-image-right {
+  width: 300px;
+  height: 270px;
+  right: 30px;
+}
+
+.img-shadow {
+  filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 767px) {
+  .home-content {
+    top: 60px; /* Ajusta la posición del contenido a 180px desde la parte superior en móviles */
+  }
+
+  .text-home-h1 {
+    font-size: 48px; /* Tamaño de fuente del h1 en pantallas pequeñas */
+    text-align: start;
+    padding: 0px 20px;
+  }
+
+  .gradient-text {
+    font-size: 48px;
+  }
+
+  .home-texto-content {
+    padding: 0px 20px;
+    text-align: start;
+    font-size: 18px;
+  }
+
+  .gradient-button-home,
+  .outline-gradient-container {
+    width: 90%; /* Botones ocupan el 90% del ancho en pantallas pequeñas */
+    margin: 5px auto; /* Centra los botones */
+  }
+
+  .outline-gradient-button {
+    width: 100%;
+  }
+
+  .ellipse-1 {
+    top: 5%;
+    left: 1%;
+  }
+
+  .main-image {
+    height: 175px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    bottom: 0;
+    left: 10%;
+    position: relative;
+  }
+
+  .floating-image-left {
+    height: 70px;
+    width: 128px;
+    left: 5%;
+    bottom: 5%;
+  }
+
+  .floating-image-right {
+    height: 150px !important;
+    width: 150px;
+    top: -15%;
+  }
+}

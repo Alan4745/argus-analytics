@@ -1,0 +1,44 @@
+.logo-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.text-dark-nav {
+  color: #000 !important;
+}
+
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 20px; /* Separación entre los enlaces */
+}
+
+.nav-item.dropdown {
+  margin-right: 20px; /* Separación entre el dropdown y el botón */
+}
+
+.color-icon {
+  color: #ab3ae0;
+}
+
+.gradient-button {
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.1); /* Escala al 110% */
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .navbar .gradient-button {
+    margin-right: 20px;
+  }
+}
