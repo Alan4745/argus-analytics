@@ -6,6 +6,9 @@ import logo4 from "./../../assets/martino.svg";
 import logo5 from "./../../assets/vertex.svg";
 import logo6 from "./../../assets/aromix.svg";
 import image1 from "./../../assets/mapaGlobal.svg"; // Asegúrate de tener la imagen correcta importada
+import iconBalansa from "./../../assets/iconbalansa.svg";
+
+import iconAnalitys from "./../../assets/iconAnalitys.svg";
 
 const AboutUs = () => {
   return (
@@ -58,30 +61,60 @@ const AboutUs = () => {
         {/* Nueva sección */}
         <div className="container aboutUs-content mt-5">
           <div className="row">
-            <div className="col-md-6 position-relative d-flex justify-content-center align-items-center aboutUs-column-left">
+            <div className="col-md-6 position-relative d-flex justify-content-center align-items-center aboutUs-column-left order-1 order-sm-0">
               <div className="main-image-about">
                 <img src={image1} alt="Main" className="img-fluid" />
               </div>
               <div className="floating-image-left-about d-block ">
-                <div className="floating-box-left"></div>
+                <div className="floating-box-left d-flex flex-row justify-content-start align-items-center">
+                  <img
+                    src={iconBalansa}
+                    alt="Floating"
+                    className="floating-image"
+                  />
+                  <div className="separator"></div>
+
+                  <div className="d-flex flex-column justify-content-center align-items-start h-100">
+                    <span className="floating-text-large">32%</span>
+                    <span className="floating-text-small">Save team time</span>
+                  </div>
+                </div>
               </div>
               <div className="floating-image-right-about d-block ">
-                <div className="floating-box-right"></div>
+                <div className="floating-box-right d-flex flex-row justify-content-start align-items-center ">
+                  <img
+                    src={iconAnalitys}
+                    alt="Floating"
+                    className="floating-image"
+                  />
+                  <div className="separator"></div>
+
+                  <div className="d-flex flex-column justify-content-center align-items-start h-100">
+                    <span className="floating-text-large">40+</span>
+                    <span className="floating-text-small">
+                      comparison parameters
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-md-6 aboutUs-column-right text-left">
-              <span className="aboutUs-span">ABOUT US</span>
+            <div className="col-md-6 aboutUs-column-right text-left order-0 order-sm-1">
+              <span className="aboutUs-span gradient-text-about">ABOUT US</span>
               <h2 className="aboutUs-heading">
                 Pioneers in geospatial data generation and analysis
               </h2>
               <span className="aboutUs-description">
-                We specialize in generating and analyzing geospatial data to
-                help you make informed decisions.
+                Through customer lifecycles, from discovery to engagement and
+                retention, our platform allows a true understanding of consumer
+                behavior and industry trends, resulting in better strategic
+                decisions and a higher ROI.
               </span>
-              <div className="outline-gradient-container mt-3">
-                <button className="outline-gradient-button">
-                  More about us
-                </button>
+              <div>
+                <div className="outline-gradient-container-about mt-3">
+                  <button className="outline-gradient-button-about">
+                    More about us
+                  </button>
+                </div>
               </div>
             </div>
           </div>
