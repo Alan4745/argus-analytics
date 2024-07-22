@@ -1,0 +1,176 @@
+.aboutUs-background {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 20px 0px;
+}
+
+.aboutUs-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  display: inline-block;
+  padding: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.aboutUs-content {
+  padding: 40px 20px;
+}
+
+.aboutUs-column-left {
+  position: relative;
+}
+
+.main-image-about {
+  max-width: 500px;
+}
+
+.floating-image-left-about,
+.floating-image-right-about {
+  position: absolute;
+}
+
+.floating-image-left-about {
+  width: 250px;
+  height: 100px;
+  right: 20px;
+  top: 10px;
+  z-index: 2;
+}
+
+.floating-image-right-about {
+  width: 250px;
+  height: 100px;
+  right: 20px;
+  top: 120px;
+}
+
+.floating-box-left {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Placeholder color */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 9.14px;
+}
+
+.floating-box-right {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Placeholder color */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 9.14px;
+}
+
+.aboutUs-column-right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutUs-span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.aboutUs-heading {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.aboutUs-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.outline-gradient-container {
+  display: inline-block;
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  padding: 2px; /* Espesor del borde degradado */
+  border-radius: 8px; /* Borde redondeado */
+  margin: 0; /* Elimina el margen por defecto */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.outline-gradient-button {
+  background: #ffffff; /* Fondo del botón transparente */
+  color: black;
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  border-radius: 7px; /* Borde redondeado */
+  cursor: pointer;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: bold;
+  width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+}
+
+.outline-gradient-container:hover {
+  transform: scale(1.1); /* Escala al 110% */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .aboutUs-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutUs-column-left,
+  .aboutUs-column-right {
+    width: 100%;
+  }
+
+  .floating-image-left-about,
+  .floating-image-right-about {
+    display: none;
+  }
+
+  .main-image-about {
+    max-width: 300px;
+  }
+
+  .aboutUs-heading {
+    font-size: 36px;
+  }
+
+  .aboutUs-description {
+    font-size: 16px;
+  }
+
+  .floating-image-left-about {
+    width: 160px;
+    height: 60px;
+    right: 20px;
+    top: 15px;
+  }
+
+  .floating-image-right-about {
+    width: 160px;
+    height: 60px;
+    right: 20px;
+    top: 85px;
+  }
+}
