@@ -3,6 +3,7 @@ import "./Home.css";
 import screeMain from "./../../assets/screenMain.svg";
 import grafico1 from "./../../assets/grafico1.svg";
 import grafico2 from "./../../assets/grafico2.svg";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -10,10 +11,18 @@ const Home = () => {
       <div className="home-background">
         <Navbar />
         <div className="home-content">
-          <h1 className="text-home-h1">
-            <span className="gradient-text">Discover</span> the power of <br />
-            geo-behavioral <span className="gradient-text">intelligence</span>
-          </h1>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <h1 className="text-home-h1">
+              <span className="gradient-text">Discover</span> the power of{" "}
+              <br />
+              geo-behavioral <span className="gradient-text">intelligence</span>
+            </h1>
+          </motion.div>
+
           <div className="spacer"></div>
           <p className="home-texto-content">
             We help you create a clear view of consumer patterns and <br />

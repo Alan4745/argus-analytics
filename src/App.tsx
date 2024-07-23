@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 import Overview from "./components/Overview/Overview";
 import Princing from "./components/Pricing/Princing";
 import Solutions from "./components/Solutions/Solutions";
-import ContactUs from "./ContactUs/ContactUs";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (

@@ -12,15 +12,22 @@
 .overview-content h2 {
   font-size: 36px;
   margin-bottom: 10px;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 .overview-content p {
   font-size: 18px;
-  color: #666;
+  color: #000000;
+  font-family: "SF Pro Text", sans-serif;
+  opacity: 0.8;
 }
 
 .overview-box {
+  width: 100%;
   padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Añade un borde redondeado si lo deseas */
 }
 
 .overview-icon-title {
@@ -30,28 +37,124 @@
   margin-bottom: 10px;
 }
 
-.overview-icon {
-  font-size: 24px;
-  color: #333;
+.overview-image {
+  width: 30px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: 30px; /* Ajusta el tamaño de la imagen según sea necesario */
 }
 
 .overview-button {
-  background-color: #4d2edb;
-  color: #fff;
-  border: none;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 50%;
-  padding: 10px;
+  height: 40px;
+  width: 40px;
   font-size: 16px;
   cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .overview-title {
   font-size: 24px;
   margin-top: 10px;
   margin-bottom: 5px;
+  text-align: start;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 .overview-description {
   font-size: 14px;
-  color: #666;
+  color: #000000;
+  text-align: start;
+  font-family: "SF Pro Text", sans-serif;
+  opacity: 0.8;
+}
+
+.main-image-overview {
+  width: 80%;
+  max-height: 500px;
+  border: none;
+  background-color: #fff; /* Color de fondo para el espacio de imagen */
+  margin: 0 auto; /* Centra la imagen en el contenedor */
+}
+
+.image-overview {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overview-card {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Añade un borde redondeado si lo deseas */
+  position: relative;
+}
+
+.card-image-wrapper {
+  position: relative;
+}
+
+.card-image-overview {
+  height: 50px !important;
+  width: 50px !important;
+  margin: 10px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  padding: 10px;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #4d2edb;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro Text", sans-serif;
+}
+
+.img-redodeado-wrapper {
+  border-radius: 50%;
+}
+
+.arrow-container {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  background-color: "#000";
+  top: 25px;
+  z-index: 5;
+}
+
+.arrow-container-connector {
+  width: 160px !important;
+  height: 40px;
+  position: absolute;
+  background-color: transparent;
+  top: 25px;
+  z-index: 5;
+  display: flex;
+}
+
+.connector-left {
+  left: calc(33.33% - 80px); /* Ajustar la posición según la columna */
+}
+.connector-right {
+  left: calc(66.66% - 80px); /* Ajustar la posición según la columna */
+}
+
+@media (max-width: 767px) {
+  .connector-left {
+    display: none !important;
+  }
+
+  .connector-right {
+    display: none !important;
+  }
 }

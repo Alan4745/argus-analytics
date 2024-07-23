@@ -9,14 +9,22 @@ import image1 from "./../../assets/mapaGlobal.svg"; // Asegúrate de tener la im
 import iconBalansa from "./../../assets/iconbalansa.svg";
 
 import iconAnalitys from "./../../assets/iconAnalitys.svg";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
     <>
       <div className="aboutUs-background">
-        <div className="text-center mb-4 aboutUs-title">
-          JOINING 1000+ SATISFIED CLIENTS
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+        >
+          <div className="text-center mb-4 aboutUs-title">
+            JOINING 1000+ SATISFIED CLIENTS
+          </div>
+        </motion.div>
+
         <div className="slider">
           <div className="slide-track">
             <div className="slide">
