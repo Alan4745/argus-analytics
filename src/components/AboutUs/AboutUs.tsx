@@ -59,7 +59,7 @@ const AboutUs = () => {
         </div>
 
         {/* Nueva sección */}
-        <div className="container aboutUs-content mt-5">
+        <div className="container aboutUs-content mt-2  mt-md-5">
           <div className="row">
             <div className="col-md-6 position-relative d-flex justify-content-center align-items-center aboutUs-column-left order-1 order-sm-0">
               <div className="main-image-about">
