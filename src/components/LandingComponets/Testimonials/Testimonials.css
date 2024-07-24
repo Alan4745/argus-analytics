@@ -1,7 +1,9 @@
 .home-testimonials {
   background-color: #ffffff;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .testimonial-card {

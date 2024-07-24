@@ -13,7 +13,7 @@ import logo from "./../../assets/logo.svg"; // Asegúrate de tener la ruta corre
 
 const Footer = () => {
   return (
-    <footer className="footer pt-3 pb-3">
+    <footer className="footer pt-5 pb-5">
       <div className="container">
         <div className="row">
           {/* Logo y Descripción */}
