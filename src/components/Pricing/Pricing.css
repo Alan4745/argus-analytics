@@ -1,0 +1,103 @@
+.pricing-background {
+  background-color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.overview-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricing-span {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.overview-content p {
+  font-size: 18px;
+  color: #000000;
+  font-family: "SF Pro Text", sans-serif;
+  opacity: 0.8;
+}
+
+.card-title-princing {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 24px;
+}
+
+.card-text-princing {
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.pricing-card {
+  margin: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px; /* Define a minimum height */
+  transition: background-position 0.5s ease-in-out, color 0.4s ease-in-out;
+  background-image: linear-gradient(90deg, #fff, #fff, #ab3ae0, #4d2edb);
+  border: 1px solid #000;
+  background-position: left;
+  background-size: 300%;
+  border: 1px solid #ffffff !important;
+}
+
+.pricing-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.pricing-card:hover {
+  background-position: right;
+  color: white;
+}
+
+.pricing-price {
+  font-size: 22px;
+  font-family: "SF Pro Display", sans-serif;
+  margin: 10px 0;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-family: "SF Pro Text", sans-serif;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.feature-icon {
+  color: green;
+  margin-right: 10px;
+}
+
+.gradient-button-princing {
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  margin-right: 16px;
+  font-size: 18px;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+}
+
+.gradient-button-princing:hover {
+  transform: scale(1.1); /* Escala al 110% */
+}

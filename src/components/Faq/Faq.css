@@ -1,0 +1,45 @@
+.home-faq {
+  background-color: #f2f0fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-span {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.accordion-button {
+  background-color: #ffffff; /* Color de fondo del botón */
+  color: #333333; /* Color del texto del botón */
+  border: 1px solid #dddddd; /* Color del borde del botón */
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000000; /* Color del texto cuando el acordeón está abierto */
+  background-color: #e9ecef; /* Color de fondo cuando el acordeón está abierto */
+}
+
+.accordion-item {
+  border: 1px solid #dddddd; /* Color del borde del acordeón */
+  border-radius: 0.25rem;
+}
+
+.accordion-body {
+  background-color: #ffffff; /* Color de fondo del cuerpo del acordeón */
+}
+
+.gradient-text-FAQ {
+  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.accordion-button::after {
+  background-image: url("./../../assets/icons/Iconadd.svg") !important; /* Ruta del icono + */
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./../../assets/icons/iconResta.svg") !important; /* Ruta del icono + */
+}

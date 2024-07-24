@@ -5,6 +5,8 @@ import Overview from "./components/Overview/Overview";
 import Princing from "./components/Pricing/Princing";
 import Solutions from "./components/Solutions/Solutions";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Faq from "./components/Faq/Faq";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Solutions />
       <Overview />
       <Princing />
+      <Faq />
+      <Testimonials />
       <ContactUs />
     </>
   );
