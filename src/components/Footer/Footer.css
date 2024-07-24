@@ -1,0 +1,75 @@
+.footer {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer-description {
+  margin-bottom: 1rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #343a40;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #343a40;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.footer-link {
+  color: #343a40;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #007bff;
+}
+
+.text-family-SF-Pro-text {
+  font-family: "SF Pro Text", sans-serif;
+  opacity: 0.8;
+}
+
+.text-family-SF-Pro-titel {
+  font-family: "SF Pro Display", sans-serif;
+  opacity: 0.8;
+}

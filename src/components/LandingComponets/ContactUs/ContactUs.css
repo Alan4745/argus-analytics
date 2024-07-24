@@ -1,0 +1,109 @@
+.contact-us {
+  background: linear-gradient(90deg, #4d2edb, #ab3ae0);
+
+  color: white; /* Color de texto blanco para contraste */
+  padding: 50px 0; /* Espaciado superior e inferior */
+  position: relative; /* Necesario para posicionar las imágenes */
+  overflow: hidden; /* Para asegurar que los elementos no se desborden */
+}
+
+.gradient-text-ContactUs {
+  background: linear-gradient(-45deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.text-contactUs {
+  font-family: "SF Pro Text", sans-serif;
+}
+
+.floating-image-ContactUs {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: 1; /* Asegúrate de que estén detrás del contenido */
+  opacity: 0.5; /* Transparencia para las imágenes de fondo */
+}
+
+.floating-image-ContactUs.left {
+  left: -20%;
+  background-image: url("./../../../assets/Union.svg");
+}
+
+.floating-image-ContactUs.right {
+  right: -20%;
+  background-image: url("./../../../assets/Union.svg");
+}
+
+.contact-info,
+form {
+  position: relative; /* Para estar por encima de las imágenes de fondo */
+  z-index: 2;
+}
+
+.contact-info h2 {
+  color: #fff; /* Color del texto blanco */
+  margin-bottom: 1rem;
+}
+
+.form-floating .form-control {
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Borde semitransparente */
+  color: white; /* Color del texto blanco */
+}
+
+.form-floating label {
+  color: white; /* Color de la etiqueta blanco */
+}
+
+.form-floating .form-control:focus {
+  background: rgba(255, 255, 255, 0.2); /* Fondo más claro al enfocar */
+  border-color: rgba(255, 255, 255, 0.5); /* Borde más claro al enfocar */
+}
+.form-floating > .form-control:focus ~ label::after {
+  background: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Fondo más claro al enfocar */
+  color: white !important;
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+  background: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Fondo más claro al enfocar */
+  color: white !important;
+}
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: white !important;
+}
+
+.form-floating > .form-control:focus ~ label {
+  color: white !important;
+}
+
+.form-check-label {
+  color: white !important; /* Color de texto blanco */
+}
+
+.btn-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #2575fc; /* Color del botón que contraste con el fondo */
+}
+
+.btn-primary:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #6a11cb;
+}

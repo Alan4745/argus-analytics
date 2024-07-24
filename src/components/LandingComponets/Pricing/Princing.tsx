@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaCheck } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const plans = [
   {
@@ -76,19 +77,53 @@ const Pricing = () => {
     ],
   };
 
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="pricing-background">
       <div className="container overview-content text-center">
-        <span className="aboutUs-span gradient-text-about">OVERVIEW</span>
-        <h2>We Provide Various Packages</h2>
-        <p>Find the one that works best for your business.</p>
+        <motion.span
+          className="aboutUs-span gradient-text-about"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.6 }}
+        >
+          Pricing
+        </motion.span>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          We Provide Various Packages
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          Find the one that works best for your business.
+        </motion.p>
       </div>
 
       <div className="container mt-5">
         <div className="row d-none d-md-flex">
           {plans.map((plan, index) => (
             <div key={index} className="col-md-3">
-              <div className="card pricing-card">
+              <motion.div
+                className="card pricing-card"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.8 }}
+                transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
+                variants={cardVariants}
+              >
                 <div className="card-body">
                   <h4 className="card-title-princing">{plan.title}</h4>
                   <p className="card-text-princing">{plan.desc}</p>
@@ -100,11 +135,15 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="gradient-button-princing  mt-5">
-                    See our solutions
-                  </button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="gradient-button-princing mt-5"
+                  >
+                    Join now
+                  </motion.button>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>
@@ -112,7 +151,14 @@ const Pricing = () => {
         <Slider className="d-md-none" {...settings}>
           {plans.map((plan, index) => (
             <div key={index} className="w-100">
-              <div className="card pricing-card">
+              <motion.div
+                className="card pricing-card"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.8 }}
+                transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
+                variants={cardVariants}
+              >
                 <div className="card-body">
                   <h4 className="card-title">{plan.title}</h4>
                   <p className="card-text">{plan.desc}</p>
@@ -124,11 +170,15 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="gradient-button-home mt-5">
-                    See our solutions
-                  </button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="gradient-button-home mt-5"
+                  >
+                    Join now
+                  </motion.button>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </Slider>

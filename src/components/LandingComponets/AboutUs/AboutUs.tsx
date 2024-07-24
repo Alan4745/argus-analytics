@@ -1,14 +1,13 @@
 import "./AboutUs.css";
-import logo1 from "./../../assets/warerio.svg";
-import logo2 from "./../../assets/squareStone.svg";
-import logo3 from "./../../assets/natroma.svg";
-import logo4 from "./../../assets/martino.svg";
-import logo5 from "./../../assets/vertex.svg";
-import logo6 from "./../../assets/aromix.svg";
-import image1 from "./../../assets/mapaGlobal.svg"; // Asegúrate de tener la imagen correcta importada
-import iconBalansa from "./../../assets/iconbalansa.svg";
-
-import iconAnalitys from "./../../assets/iconAnalitys.svg";
+import logo1 from "./../../../assets/warerio.svg";
+import logo2 from "./../../../assets/squareStone.svg";
+import logo3 from "./../../../assets/natroma.svg";
+import logo4 from "./../../../assets/martino.svg";
+import logo5 from "./../../../assets/vertex.svg";
+import logo6 from "./../../../assets/aromix.svg";
+import image1 from "./../../../assets/mapaGlobal.svg";
+import iconBalansa from "./../../../assets/iconbalansa.svg";
+import iconAnalitys from "./../../../assets/iconAnalitys.svg";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
@@ -16,16 +15,23 @@ const AboutUs = () => {
     <>
       <div className="aboutUs-background">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.6 }}
         >
           <div className="text-center mb-4 aboutUs-title">
             JOINING 1000+ SATISFIED CLIENTS
           </div>
         </motion.div>
 
-        <div className="slider">
+        <motion.div
+          className="slider"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <div className="slide-track">
             <div className="slide">
               <img src={logo1} alt="Logo 1" />
@@ -64,12 +70,24 @@ const AboutUs = () => {
               <img src={logo6} alt="Logo 6" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Nueva sección */}
-        <div className="container aboutUs-content mt-2  mt-md-5">
+        <motion.div
+          className="container aboutUs-content mt-2 mt-md-5"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <div className="row">
-            <div className="col-md-6 position-relative d-flex justify-content-center align-items-center aboutUs-column-left order-1 order-sm-0">
+            <motion.div
+              className="col-md-6 position-relative d-flex justify-content-center align-items-center aboutUs-column-left order-1 order-sm-0"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.8 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <div className="main-image-about">
                 <img src={image1} alt="Main" className="img-fluid" />
               </div>
@@ -105,8 +123,14 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-6 aboutUs-column-right text-left order-0 order-sm-1">
+            </motion.div>
+            <motion.div
+              className="col-md-6 aboutUs-column-right text-left order-0 order-sm-1"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <span className="aboutUs-span gradient-text-about">ABOUT US</span>
               <h2 className="aboutUs-heading">
                 Pioneers in geospatial data generation and analysis
@@ -124,9 +148,9 @@ const AboutUs = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
