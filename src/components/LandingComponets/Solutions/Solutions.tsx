@@ -138,7 +138,7 @@ const Solutions = () => {
         viewport={{ once: true, amount: 0.8 }}
         transition={{ duration: 0.6, delay: 1.2 }}
       >
-        See our solutions
+        See all solutions
       </motion.button>
     </div>
   );

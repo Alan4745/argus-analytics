@@ -1,6 +1,13 @@
 import "./Navbar.css";
-import logo from "./../../assets/logo.svg";
+import logo from "./../../assets/Logo (1).svg";
+import { useState } from "react";
 const Navbar = () => {
+  const [lenguague, setLenguaje] = useState<string>('Eng');
+
+  const changeLenguaje = (lenguage: string) =>{
+    setLenguaje(lenguage)
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
@@ -9,9 +16,9 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Company Logo"
-              style={{ width: "30px", marginRight: "10px" }}
+              style={{ width: "120px", marginRight: "10px" }}
             />
-            Pluster.ai
+            {/* Pluster.ai */}
           </a>
           <button
             className="navbar-toggler"
@@ -52,35 +59,32 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="d-flex align-items-center">
+
               <div className="nav-item dropdown me-3">
-                <a
-                  className="nav-link dropdown-toggle d-flex align-items-center"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fas fa-globe ms-2 p-2 fw-bold color-icon "></i>
-                  Eng
+                  {lenguague}
                 </a>
+
                 <ul className="dropdown-menu">
-                  <li>
+                  <li onClick={() => changeLenguaje('Eng')}>
                     <a className="dropdown-item" href="#">
                       English
                     </a>
                   </li>
-                  <li>
+                  <li onClick={() => changeLenguaje('Esp')}>
                     <a className="dropdown-item" href="#">
                       Spanish
                     </a>
                   </li>
-                  <li>
+                  <li onClick={() => changeLenguaje('Fren')}>
                     <a className="dropdown-item" href="#">
                       French
                     </a>
                   </li>
                 </ul>
               </div>
+
               <button className="gradient-button">Contact us</button>
             </div>
           </div>

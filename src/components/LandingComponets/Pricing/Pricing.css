@@ -56,6 +56,7 @@
   justify-content: space-between;
   flex-grow: 1;
   background-color: transparent;
+  height: 32rem;
 }
 
 .pricing-card:hover {
@@ -95,7 +96,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+  width: 100%; /* Ajusta el ancho automáticamente en pantallas grandes */
 }
 
 .gradient-button-princing:hover {

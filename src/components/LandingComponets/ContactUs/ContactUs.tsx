@@ -65,8 +65,9 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <i className="fas fa-map-marker-alt"></i> Via 3, 1-00, Zona 4,
-                Edificio Tec 3 <br /> Guatemala, Guatemala 01004
+                <i className="fas fa-map-marker-alt contact-icon"></i> Via 3, 1-00, Zona 4,
+                Edificio Tec 3 <br /> 
+                <p className="mar-rig-less">Guatemala, Guatemala 01004</p>
               </motion.p>
               <motion.p
                 className="text-contactUs"
@@ -74,7 +75,7 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 1 }}
               >
-                <i className="fas fa-phone-alt"></i> +(502) 2372-2614
+                <i className="fa-solid fa-phone contact-icon"></i> +(502) 2372-2614
               </motion.p>
             </div>
           </div>
@@ -121,7 +122,7 @@ const ContactUs = () => {
                       id="email"
                       placeholder="Email"
                     />
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Your Email</label>
                   </div>
                 </div>
                 <div className="col-12 col-sm-6">
@@ -145,7 +146,7 @@ const ContactUs = () => {
                     placeholder="Message"
                     style={{ height: "100px" }}
                   ></textarea>
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message">How can we help you?</label>
                 </div>
               </div>
 
@@ -156,12 +157,12 @@ const ContactUs = () => {
                   id="terms"
                 />
                 <label className="form-check-label" htmlFor="terms">
-                  I agree to the terms and conditions
+                  I agree to the processing of my data in accordance with the Privacy Policy
                 </label>
               </div>
 
-              <button type="submit" className="btn btn-light">
-                Request Demo
+              <button type="submit" className="btn btn-light fw-bolder">
+                Request a Demo
               </button>
             </motion.form>
           </div>
