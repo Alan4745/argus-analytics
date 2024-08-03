@@ -119,3 +119,9 @@ form {
 .contact-icon{
   margin-left: 10px;
 }
+
+@media (width <= 450px){
+  .btnWidth {
+    width: 100%;
+  }
+}

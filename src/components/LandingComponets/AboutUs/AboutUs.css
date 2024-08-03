@@ -160,8 +160,13 @@
   padding: 2px; /* Espesor del borde degradado */
   border-radius: 8px; /* Borde redondeado */
   margin: 0; /* Elimina el margen por defecto */
-
   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@media (width <= 450px){
+  .outline-gradient-container-about{
+    width: 100%;
+  }
 }
 
 /* Botón con borde degradado */
@@ -175,7 +180,7 @@
   cursor: pointer;
   font-family: "SF Pro Text", sans-serif;
   font-weight: bold;
-  width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+  width: 100%; /* Ajusta el ancho automáticamente en pantallas grandes */
 }
 
 .outline-gradient-container-about:hover {

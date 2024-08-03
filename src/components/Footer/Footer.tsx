@@ -17,9 +17,9 @@ const Footer = () => {
   return (
     <footer className="footer pt-5 pb-5">
       <div className="container">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between flex-wrap">
           {/* Logo y Descripción */}
-          <div className="mb-4 mb-md-0 d-flex align-items-start gap-3 width-30">
+          <div className="mb-4 mb-md-0 d-flex align-items-start gap-3 flex-wrap width-30 ">
             <div className="d-flex">
               <img src={logo} alt="Company Logo" className="footer-logo mb-3" />
               {/* <span className="logo-text fs-4 ms-2">Pulster.ai</span> */}
@@ -39,9 +39,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="d-flex">
+          <div className="d-flex flex-wrap">
             {/* Links de otras páginas */}
-          <div className="">
+          <div className="d-flex">
             {/* <h5 className="footer-title text-family-SF-Pro-titel">
               Quick Links
             </h5> */}
@@ -90,17 +90,17 @@ const Footer = () => {
         </div>
 
         <div className="row mt-4">
-          <div className="col-12 text-center d-flex w-100 justify-content-between">
+          <div className="col-12 text-center d-flex flex-wrap-reverse align-items-center w-100 justify-content-between">
             <p className="text-family-SF-Pro-text">
               © 2024 Pluster.ai by Argus Analytics All rights reserved
             </p>
 
-            <div>
+            <div className="widthMobile">
               <a href="/privacy-policy" className="footer-link text-family-SF-Pro-text">
                 Privacy Policy
               </a>
               {" "}
-              |
+              <span className="hiddenMobile"> | </span>
               {" "}
               <a href="/terms-of-service" className="footer-link text-family-SF-Pro-text" >
                 Terms of Service

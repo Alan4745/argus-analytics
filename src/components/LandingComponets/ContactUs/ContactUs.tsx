@@ -161,7 +161,7 @@ const ContactUs = () => {
                 </label>
               </div>
 
-              <button type="submit" className="btn btn-light fw-bolder">
+              <button type="submit" className="btn btn-light fw-bolder btnWidth">
                 Request a Demo
               </button>
             </motion.form>

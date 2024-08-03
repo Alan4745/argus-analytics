@@ -87,7 +87,7 @@ const Solutions = () => {
             </motion.div>
           </div>
         </div>
-        <div className="row mt-4">
+        <div className="row mt-md-4">
           <div className="col-md-7">
             <motion.div
               className="solution-card"

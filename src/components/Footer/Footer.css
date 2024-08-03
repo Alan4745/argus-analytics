@@ -11,9 +11,10 @@
   margin-bottom: 1rem;
 }
 
-.width-30{
+.width-30 {
   width: 30rem;
 }
+
 .footer-social-icons {
   display: flex;
   gap: 10px;
@@ -55,13 +56,14 @@
 
 .contact-icon {
   margin-right: 10px;
+  color: #9482e9;
 }
 
-.mar-rig{
+.mar-rig {
   margin-left: 30px;
 }
 
-.margin-info{
+.margin-info {
   margin-left: 5rem;
 }
 
@@ -84,4 +86,33 @@
 .text-family-SF-Pro-titel {
   font-family: "SF Pro Display", sans-serif;
   opacity: 0.8;
+}
+
+@media (width <=450px) {
+  .footer-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .margin-info {
+    margin-left: 0;
+  }
+
+  .widthMobile{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hiddenMobile{
+    display: none;
+  }
+
+  .mar-rig {
+    margin-left: 40px;
+  }
 }
