@@ -179,7 +179,7 @@ const Overview = () => {
       </div>
 
       <div className="container">
-        <div className="row position-relative">
+        <div className="row position-relative gap-4 gap-md-0">
           <div className="col-md-4 d-flex flex-column align-items-center text-center">
             <motion.div
               className="overview-card shadow-box"

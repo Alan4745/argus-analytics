@@ -1,5 +1,5 @@
 .contact-us {
-  background: linear-gradient(90deg, #4d2edb, #ab3ae0);
+  background: linear-gradient(90deg, #ab3ae0, #4d2edb);
 
   color: white; /* Color de texto blanco para contraste */
   padding: 50px 0; /* Espaciado superior e inferior */
@@ -16,6 +16,7 @@
 
 .text-contactUs {
   font-family: "SF Pro Text", sans-serif;
+  width: 30rem;
 }
 
 .floating-image-ContactUs {
@@ -52,9 +53,11 @@ form {
 }
 
 .form-floating .form-control {
-  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-  border: 1px solid rgba(255, 255, 255, 0.25); /* Borde semitransparente */
-  color: white; /* Color del texto blanco */
+  background: transparent; /* Fondo semitransparente */
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25); /* Borde semitransparente */
+  color: white !important; /* Color del texto blanco */
+  border-radius: 0;
 }
 
 .form-floating label {
@@ -64,6 +67,7 @@ form {
 .form-floating .form-control:focus {
   background: rgba(255, 255, 255, 0.2); /* Fondo más claro al enfocar */
   border-color: rgba(255, 255, 255, 0.5); /* Borde más claro al enfocar */
+  box-shadow: none;
 }
 .form-floating > .form-control:focus ~ label::after {
   background: rgba(
@@ -106,4 +110,18 @@ form {
   background-color: #f8f9fa;
   border-color: #f8f9fa;
   color: #6a11cb;
+}
+
+.mar-rig-less{
+  margin-left: 35px;
+}
+
+.contact-icon{
+  margin-left: 10px;
+}
+
+@media (width <= 450px){
+  .btnWidth {
+    width: 100%;
+  }
 }

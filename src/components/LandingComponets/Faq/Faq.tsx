@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Faq.css";
 
 const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const headerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -11,6 +13,14 @@ const Faq = () => {
   const accordionVariants = {
     hidden: { opacity: 0, scale: 0.95 },
     visible: { opacity: 1, scale: 1 },
+  };
+
+  const changeIcon = (index: number): string => {
+    return activeIndex === index ? 'fa-solid fa-minus' : 'fa-solid fa-plus';
+  };
+
+  const handleToggle = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
@@ -51,7 +61,7 @@ const Faq = () => {
       <div className="container mt-5">
         <div className="accordion" id="accordionExample">
           {["collapseOne", "collapseTwo", "collapseThree", "collapseFour"].map(
-            (collapseId, index) => (
+            (collapseId: string, index: number) => (
               <motion.div
                 className="accordion-item"
                 initial="hidden"
@@ -69,17 +79,18 @@ const Faq = () => {
                     data-bs-target={`#${collapseId}`}
                     aria-expanded="false"
                     aria-controls={collapseId}
+                    onClick={() => handleToggle(index)}
                   >
-                    <span className="gradient-text-FAQ">
-                      {collapseId === "collapseOne" &&
-                        "Important, popular and topical question?"}
-                      {collapseId === "collapseTwo" &&
-                        "Popular and topical question?"}
-                      {collapseId === "collapseThree" &&
-                        "Important and topical question?"}
-                      {collapseId === "collapseFour" &&
-                        "Important, popular and topical question?"}
-                    </span>
+                    <div className="d-flex justify-content-between w-100">
+                      <span className="gradient-text-FAQ">
+                        {collapseId === "collapseOne" && "Important, popular and topical question?"}
+                        {collapseId === "collapseTwo" && "Popular and topical question?"}
+                        {collapseId === "collapseThree" && "Important and topical question?"}
+                        {collapseId === "collapseFour" && "Important, popular and topical question?"}
+                      </span>
+
+                      <i className={changeIcon(index)}></i>
+                    </div>
                   </button>
                 </h2>
                 <div

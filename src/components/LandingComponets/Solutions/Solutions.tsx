@@ -87,7 +87,7 @@ const Solutions = () => {
             </motion.div>
           </div>
         </div>
-        <div className="row mt-4">
+        <div className="row mt-md-4">
           <div className="col-md-7">
             <motion.div
               className="solution-card"
@@ -138,7 +138,7 @@ const Solutions = () => {
         viewport={{ once: true, amount: 0.8 }}
         transition={{ duration: 0.6, delay: 1.2 }}
       >
-        See our solutions
+        See all solutions
       </motion.button>
     </div>
   );

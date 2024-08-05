@@ -11,7 +11,7 @@
 }
 
 .accordion-button {
-  background-color: #ffffff; /* Color de fondo del botón */
+  background-color: transparent !important; /* Color de fondo del botón */
   color: #333333; /* Color del texto del botón */
   border: 1px solid #dddddd; /* Color del borde del botón */
 }
@@ -21,9 +21,12 @@
   background-color: #e9ecef; /* Color de fondo cuando el acordeón está abierto */
 }
 
-.accordion-item {
-  border: 1px solid #dddddd; /* Color del borde del acordeón */
-  border-radius: 0.25rem;
+.accordion-item, .accordion-body {
+  border: none !important; /* Color del borde del acordeón */
+  background: transparent !important;
+  border-bottom: 1px solid #dddddd !important;
+  box-shadow: none !important;
+  /* border-radius: 0.25rem; */
 }
 
 .accordion-body {
