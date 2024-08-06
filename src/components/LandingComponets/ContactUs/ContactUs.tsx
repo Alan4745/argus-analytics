@@ -23,7 +23,7 @@ const ContactUs = () => {
   const isFormInView = useInView(formRef, { once: true });
 
   return (
-    <div className="contact-us pt-5 pb-5">
+    <div className="contact-us pt-5 pb-5" id="ContactUs">
       <div className="floating-image-ContactUs left"></div>
       <div className="floating-image-ContactUs right"></div>
       <div className="container">
@@ -39,7 +39,7 @@ const ContactUs = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 {/* CONTACT US */}
-                {t('contactUs')}
+                {t("contactUs")}
               </motion.span>
               <motion.h2
                 ref={subtitleRef}
@@ -50,7 +50,7 @@ const ContactUs = () => {
               >
                 {/* Making decisions <br />
                 is no longer a gamble */}
-                {t('makingDecisions')}
+                {t("makingDecisions")}
               </motion.h2>
               <motion.p
                 ref={descRef}
@@ -61,7 +61,7 @@ const ContactUs = () => {
               >
                 {/* It is a long established fact that a reader will be distracted
                 by the readable content met facilisis facilisis eget. */}
-                {t('longEstablishedFact')}
+                {t("longEstablishedFact")}
               </motion.p>
               <motion.p
                 ref={contactRef}
@@ -70,8 +70,8 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <i className="fas fa-map-marker-alt contact-icon"></i> Via 3, 1-00, Zona 4,
-                Edificio Tec 3 <br /> 
+                <i className="fas fa-map-marker-alt contact-icon"></i> Via 3,
+                1-00, Zona 4, Edificio Tec 3 <br />
                 <p className="mar-rig-less">Guatemala, Guatemala 01004</p>
               </motion.p>
               <motion.p
@@ -80,7 +80,8 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 1 }}
               >
-                <i className="fa-solid fa-phone contact-icon"></i> +(502) 2372-2614
+                <i className="fa-solid fa-phone contact-icon"></i> +(502)
+                2372-2614
               </motion.p>
             </div>
           </div>
@@ -162,11 +163,15 @@ const ContactUs = () => {
                   id="terms"
                 />
                 <label className="form-check-label" htmlFor="terms">
-                  I agree to the processing of my data in accordance with the Privacy Policy
+                  I agree to the processing of my data in accordance with the
+                  Privacy Policy
                 </label>
               </div>
 
-              <button type="submit" className="btn btn-light fw-bolder btnWidth">
+              <button
+                type="submit"
+                className="btn btn-light fw-bolder btnWidth"
+              >
                 Request a Demo
               </button>
             </motion.form>

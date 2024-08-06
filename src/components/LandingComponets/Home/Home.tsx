@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  const {t}= useTranslation();
+  const { t } = useTranslation();
   return (
     <>
-      <div className="home-background">
+      <div className="home-background" id="home">
         <Navbar />
         <div className="home-content">
           <motion.div
@@ -20,11 +20,10 @@ const Home = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-home-h1">
-              <span className="gradient-text">{t('homeTitle1-1')} </span> 
-              {t('homeTitle1-2')}{" "}
-              <br />
-              {t('homeTitle2-1')} 
-              <span className="gradient-text"> {t('homeTitle2-2')}</span>
+              <span className="gradient-text">{t("homeTitle1-1")} </span>
+              {t("homeTitle1-2")} <br />
+              {t("homeTitle2-1")}
+              <span className="gradient-text"> {t("homeTitle2-2")}</span>
             </h1>
           </motion.div>
 
@@ -36,8 +35,8 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="home-texto-content"
           >
-            {t('homeSubtitle1')} <br />
-            {t('homeSubtitle2')}
+            {t("homeSubtitle1")} <br />
+            {t("homeSubtitle2")}
           </motion.p>
           <div className="large-spacer"></div>
           <motion.button
@@ -47,7 +46,7 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="gradient-button-home"
           >
-            {t('homeBtnText1')}
+            {t("homeBtnText1")}
           </motion.button>
           <div className="outline-gradient-container">
             <motion.button
@@ -57,7 +56,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="outline-gradient-button"
             >
-              {t('homeBtnText2')}
+              {t("homeBtnText2")}
             </motion.button>
           </div>
         </div>

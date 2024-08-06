@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <>
-      <div className="aboutUs-background">
+      <div className="aboutUs-background" id="Aboutus">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}

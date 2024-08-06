@@ -15,7 +15,10 @@ const Solutions = () => {
   };
 
   return (
-    <div className="solutions-background d-flex flex-column justify-content-start align-items-center pt-5 pb-5">
+    <div
+      className="solutions-background d-flex flex-column justify-content-start align-items-center pt-5 pb-5"
+      id="solutions"
+    >
       <div className="ellipse ellipse-1"></div>
       <div className="ellipse ellipse-2"></div>
       <div className="ellipse ellipse-3"></div>

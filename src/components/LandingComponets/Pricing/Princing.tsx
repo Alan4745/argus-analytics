@@ -60,7 +60,7 @@ const plans = [
 ];
 
 const Pricing = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -85,7 +85,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="pricing-background">
+    <div className="pricing-background" id="Pricing">
       <div className="container overview-content text-center">
         <motion.span
           className="aboutUs-span gradient-text-about"
@@ -95,7 +95,7 @@ const Pricing = () => {
           transition={{ duration: 0.6 }}
         >
           {/* Pricing */}
-          {t('pricingTitle')}
+          {t("pricingTitle")}
         </motion.span>
         <motion.h2
           initial={{ opacity: 0 }}
@@ -104,7 +104,7 @@ const Pricing = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {/* We Provide Various Packages */}
-          {t('pricingSubtitle')}
+          {t("pricingSubtitle")}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -113,7 +113,7 @@ const Pricing = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {/* Find the one that works best for your business. */}
-          {t('pricingText')}
+          {t("pricingText")}
         </motion.p>
       </div>
 
