@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import iconAtras from "./../../../assets/icons/atras.png";
 import iconAdelante from "./../../../assets/icons/proximo.png";
 import imgPerfil from "./../../../assets/perfilpersona.svg";
+import { useTranslation } from "react-i18next";
 
 const testimonialsData = [
   {
@@ -93,6 +94,8 @@ const CustomNextArrow = (props) => {
 };
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -138,7 +141,8 @@ const Testimonials = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Testimonials
+          {/* Testimonials */}
+          {t('testimonials')}
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -146,7 +150,8 @@ const Testimonials = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          Satisfied Client From Big Brands
+          {/* Satisfied Client From Big Brands */}
+          {t('satisfiedClient')}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -154,8 +159,9 @@ const Testimonials = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          It is a long established fact that a reader will be distracted by the
-          readable content.
+          {/* It is a long established fact that a reader will be distracted by the
+          readable content. */}
+          {t('longEstablishedFactReader')}
         </motion.p>
       </div>
       <div className="container mt-5">

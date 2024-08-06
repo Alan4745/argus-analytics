@@ -4,8 +4,10 @@ import screeMain from "./../../../assets/screenMain.svg";
 import grafico1 from "./../../../assets/grafico1.svg";
 import grafico2 from "./../../../assets/grafico2.svg";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const {t}= useTranslation();
   return (
     <>
       <div className="home-background">
@@ -18,9 +20,11 @@ const Home = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-home-h1">
-              <span className="gradient-text">Discover</span> the power of{" "}
+              <span className="gradient-text">{t('homeTitle1-1')} </span> 
+              {t('homeTitle1-2')}{" "}
               <br />
-              geo-behavioral <span className="gradient-text">intelligence</span>
+              {t('homeTitle2-1')} 
+              <span className="gradient-text"> {t('homeTitle2-2')}</span>
             </h1>
           </motion.div>
 
@@ -32,8 +36,8 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="home-texto-content"
           >
-            We help you create a clear view of consumer patterns and <br />
-            trends that impact your business
+            {t('homeSubtitle1')} <br />
+            {t('homeSubtitle2')}
           </motion.p>
           <div className="large-spacer"></div>
           <motion.button
@@ -43,7 +47,7 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="gradient-button-home"
           >
-            See our solutions
+            {t('homeBtnText1')}
           </motion.button>
           <div className="outline-gradient-container">
             <motion.button
@@ -53,7 +57,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="outline-gradient-button"
             >
-              More about us
+              {t('homeBtnText2')}
             </motion.button>
           </div>
         </div>

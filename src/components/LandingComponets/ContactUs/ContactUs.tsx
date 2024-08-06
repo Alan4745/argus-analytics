@@ -2,8 +2,10 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import "./ContactUs.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
+  const { t } = useTranslation();
   // Usar refs para detectar cuándo los elementos están en la vista
   const titleRef = React.useRef(null);
   const isTitleInView = useInView(titleRef, { once: true });
@@ -36,7 +38,8 @@ const ContactUs = () => {
                 animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                CONTACT US
+                {/* CONTACT US */}
+                {t('contactUs')}
               </motion.span>
               <motion.h2
                 ref={subtitleRef}
@@ -45,8 +48,9 @@ const ContactUs = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 style={{ fontSize: 40 }}
               >
-                Making decisions <br />
-                is no longer a gamble
+                {/* Making decisions <br />
+                is no longer a gamble */}
+                {t('makingDecisions')}
               </motion.h2>
               <motion.p
                 ref={descRef}
@@ -55,8 +59,9 @@ const ContactUs = () => {
                 animate={isDescInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                It is a long established fact that a reader will be distracted
-                by the readable content met facilisis facilisis eget.
+                {/* It is a long established fact that a reader will be distracted
+                by the readable content met facilisis facilisis eget. */}
+                {t('longEstablishedFact')}
               </motion.p>
               <motion.p
                 ref={contactRef}
