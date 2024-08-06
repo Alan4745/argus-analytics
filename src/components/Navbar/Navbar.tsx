@@ -1,11 +1,28 @@
 import "./Navbar.css";
 import logo from "./../../assets/Logo (1).svg";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const [lenguague, setLenguaje] = useState<string>('Eng');
+  const { i18n } = useTranslation();
+  const {t}= useTranslation()
 
-  const changeLenguaje = (lenguage: string) =>{
-    setLenguaje(lenguage)
+  const changeLenguaje = (lenguage: string) => {
+    // Cambiar el idioma
+    setLenguaje(lenguage);
+    switch (lenguage) {
+      case 'Eng':
+        i18n.changeLanguage('en');
+        break;
+      case 'Esp':
+        i18n.changeLanguage('es');
+        break;
+      case 'Fren':
+        i18n.changeLanguage('fr');
+        break;
+      default:
+        i18n.changeLanguage('en');
+    }
   }
 
   return (
@@ -36,23 +53,23 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <a className="nav-link fw-normal text-dark-nav">
-                  Home
+                  {t('listTitle1')}
                 </a>
               </li>
-              
+
               <li className="nav-item">
                 <a className="nav-link fw-normal text-dark-nav">
-                  About us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link fw-normal text-dark-nav">
-                  Solutions
+                  {t('listTitle2')}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link fw-normal text-dark-nav">
-                  Pricing
+                  {t('listTitle3')}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link fw-normal text-dark-nav">
+                  {t('listTitle4')}
                 </a>
               </li>
             </ul>
@@ -83,7 +100,7 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              <button className="gradient-button">Contact us</button>
+              <button className="gradient-button">{t('navbarBtn')}</button>
             </div>
           </div>
         </div>

@@ -12,8 +12,10 @@ import {
 
 // import { FaXTwitter } from "react-icons/fa6";
 import logo from "./../../assets/Logo (1).svg"; // Asegúrate de tener la ruta correcta para el logo
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation();
   return (
     <footer className="footer pt-5 pb-5">
       <div className="container">
@@ -27,7 +29,8 @@ const Footer = () => {
 
             <div>
               <p className="footer-description text-family-SF-Pro-text">
-              It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader .
+              {t('footerText')}
+              {/* It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader . */}
               </p>
               <div className="footer-social-icons">
                 <FaFacebook className="social-icon" />

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Faq.css";
+import { useTranslation } from "react-i18next";
 
 const Faq = () => {
+  const {t} = useTranslation();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const headerVariants = {
@@ -44,7 +46,8 @@ const Faq = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           variants={headerVariants}
         >
-          Frequently Asked Questions
+          {/* Frequently Asked Questions */}
+          {t('faqTitle')}
         </motion.h2>
         <motion.p
           initial="hidden"
@@ -53,8 +56,9 @@ const Faq = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           variants={headerVariants}
         >
-          It is a long established fact that a reader will be <br /> distracted
-          by the readable content.
+          {/* It is a long established fact that a reader will be <br /> distracted
+          by the readable content. */}
+          {t('faqText')}
         </motion.p>
       </div>
 

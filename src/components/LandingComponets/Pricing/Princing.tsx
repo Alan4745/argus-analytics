@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const plans = [
   {
@@ -59,6 +60,7 @@ const plans = [
 ];
 
 const Pricing = () => {
+  const {t} = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -92,7 +94,8 @@ const Pricing = () => {
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6 }}
         >
-          Pricing
+          {/* Pricing */}
+          {t('pricingTitle')}
         </motion.span>
         <motion.h2
           initial={{ opacity: 0 }}
@@ -100,7 +103,8 @@ const Pricing = () => {
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          We Provide Various Packages
+          {/* We Provide Various Packages */}
+          {t('pricingSubtitle')}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -108,7 +112,8 @@ const Pricing = () => {
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Find the one that works best for your business.
+          {/* Find the one that works best for your business. */}
+          {t('pricingText')}
         </motion.p>
       </div>
 
