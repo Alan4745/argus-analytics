@@ -66,6 +66,7 @@
   -webkit-text-fill-color: transparent;
   font-size: 72px;
   font-family: "SF Pro Display", sans-serif;
+  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 .spacer {
@@ -88,12 +89,13 @@
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
   width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .gradient-button-home:hover {
-  transform: scale(1.1); /* Escala al 110% */
+  transform: scale(1.1) !important; /* Escala al 110% */
 }
 
 /* Contenedor del borde degradado */
@@ -105,11 +107,16 @@
   margin: 0; /* Elimina el margen por defecto */
 
   transition: transform 0.3s ease, background-color 0.3s ease;
+  
+}
+
+.outline-gradient-button-container{
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Botón con borde degradado */
 .outline-gradient-button {
-  background: #f2f0fa; /* Fondo del botón transparente */
+  background: #fff; /* Fondo del botón transparente */
   color: black;
   border: none;
   padding: 16px 40px;
@@ -119,9 +126,10 @@
   font-family: "SF Pro Text", sans-serif;
   font-weight: bold;
   width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
-.outline-gradient-container:hover {
+.outline-gradient-container:hover, .outline-gradient-button-container:hover {
   transform: scale(1.1); /* Escala al 110% */
 }
 

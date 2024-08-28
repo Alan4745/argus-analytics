@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Faq.css";
 import { useTranslation } from "react-i18next";
+import { faqCollapseData, ICollapse } from "./faq.data";
 
 const Faq = () => {
   const {t} = useTranslation();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [collapseData, setCollapseData] = useState<ICollapse[]>(faqCollapseData);
 
   const headerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -16,6 +18,13 @@ const Faq = () => {
     hidden: { opacity: 0, scale: 0.95 },
     visible: { opacity: 1, scale: 1 },
   };
+
+  const changeActiveCollapse = (collapse: ICollapse) => {
+    const collapseUnactive = faqCollapseData.filter(col => col.nameCollapse !== collapse.nameCollapse);
+    collapseUnactive.map(col => col.active = false);
+    collapse.active = !collapse.active;
+    setCollapseData(faqCollapseData);
+  }
 
   const changeIcon = (index: number): string => {
     return activeIndex === index ? 'fa-solid fa-minus' : 'fa-solid fa-plus';
@@ -64,8 +73,7 @@ const Faq = () => {
 
       <div className="container mt-5">
         <div className="accordion" id="accordionExample">
-          {["collapseOne", "collapseTwo", "collapseThree", "collapseFour"].map(
-            (collapseId: string, index: number) => (
+          {collapseData && collapseData.map((collapse: ICollapse, index: number) => (
               <motion.div
                 className="accordion-item"
                 initial="hidden"
@@ -73,24 +81,22 @@ const Faq = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
                 variants={accordionVariants}
-                key={collapseId}
+                onClick={() => changeActiveCollapse(collapse)}
+                key={collapse.nameCollapse}
               >
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target={`#${collapseId}`}
+                    data-bs-target={`#${collapse.nameCollapse}`}
                     aria-expanded="false"
-                    aria-controls={collapseId}
+                    aria-controls={collapse.nameCollapse}
                     onClick={() => handleToggle(index)}
                   >
                     <div className="d-flex justify-content-between w-100">
-                      <span className="gradient-text-FAQ">
-                        {collapseId === "collapseOne" && "Important, popular and topical question?"}
-                        {collapseId === "collapseTwo" && "Popular and topical question?"}
-                        {collapseId === "collapseThree" && "Important and topical question?"}
-                        {collapseId === "collapseFour" && "Important, popular and topical question?"}
+                      <span className={`gradient-text-FAQ ${collapse.active ? 'activeTitle' : ''}`}>
+                        {collapse.title}
                       </span>
 
                       <i className={changeIcon(index)}></i>
@@ -98,9 +104,9 @@ const Faq = () => {
                   </button>
                 </h2>
                 <div
-                  id={collapseId}
+                  id={collapse.nameCollapse}
                   className={`accordion-collapse collapse ${
-                    collapseId === "collapseOne" ? "show" : ""
+                    collapse.nameCollapse === "collapseOne" ? "show" : ""
                   }`}
                   data-bs-parent="#accordionExample"
                 >

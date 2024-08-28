@@ -34,10 +34,14 @@
 }
 
 .gradient-text-FAQ {
+
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.gradient-text-FAQ.activeTitle{
   background: linear-gradient(45deg, #4d2edb, #ab3ae0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "SF Pro Display", sans-serif;
 }
 
 .accordion-button::after {

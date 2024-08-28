@@ -184,7 +184,7 @@
 }
 
 .outline-gradient-container-about:hover {
-  transform: scale(1.1); /* Escala al 110% */
+  transform: scale(1.05); /* Escala al 110% */
 }
 /* Estilos específicos para pantallas pequeñas */
 @media (max-width: 767px) {

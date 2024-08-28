@@ -3,7 +3,7 @@ import "./Pricing.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaCheck } from "react-icons/fa";
+import { FaRegCheckCircle  } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -136,7 +136,7 @@ const Pricing = () => {
                   <ul className="pricing-features">
                     {plan.features.map((feature, index) => (
                       <li key={index}>
-                        <FaCheck className="feature-icon" /> {feature}
+                        <FaRegCheckCircle  className="feature-icon" /> {feature}
                       </li>
                     ))}
                   </ul>
@@ -171,7 +171,7 @@ const Pricing = () => {
                   <ul className="pricing-features">
                     {plan.features.map((feature, index) => (
                       <li key={index}>
-                        <FaCheck className="feature-icon" /> {feature}
+                        <FaRegCheckCircle  className="feature-icon" /> {feature}
                       </li>
                     ))}
                   </ul>

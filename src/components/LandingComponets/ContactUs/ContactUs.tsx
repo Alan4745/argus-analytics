@@ -70,7 +70,7 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <i className="fas fa-map-marker-alt contact-icon"></i> Via 3,
+                <i className="fas fa-map-marker-alt contact-icon text-white"></i> Via 3,
                 1-00, Zona 4, Edificio Tec 3 <br />
                 <p className="mar-rig-less">Guatemala, Guatemala 01004</p>
               </motion.p>
@@ -80,7 +80,7 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 1 }}
               >
-                <i className="fa-solid fa-phone contact-icon"></i> +(502)
+                <i className="fa-solid fa-phone contact-icon text-white"></i> +(502)
                 2372-2614
               </motion.p>
             </div>
