@@ -67,10 +67,9 @@
   content: "";
 }
 
-.img-fluid{
-  transform: translateX(-.6rem);
+.img-fluid.left {
+  transform: translateX(-0.6rem);
 }
-.img-fluid.right{
+.img-fluid.right {
   transform: translateX(0rem);
 }
-
