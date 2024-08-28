@@ -3,7 +3,7 @@ import "./Pricing.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaRegCheckCircle  } from "react-icons/fa";
+import { FaRegCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -98,21 +98,22 @@ const Pricing = () => {
           {t("pricingTitle")}
         </motion.span>
         <motion.h2
+          className="text-md-center text-start"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {/* We Provide Various Packages */}
           {t("pricingSubtitle")}
         </motion.h2>
         <motion.p
+          className="text-md-center text-start"
+          text-sm-start
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          {/* Find the one that works best for your business. */}
           {t("pricingText")}
         </motion.p>
       </div>
@@ -136,7 +137,7 @@ const Pricing = () => {
                   <ul className="pricing-features">
                     {plan.features.map((feature, index) => (
                       <li key={index}>
-                        <FaRegCheckCircle  className="feature-icon" /> {feature}
+                        <FaRegCheckCircle className="feature-icon" /> {feature}
                       </li>
                     ))}
                   </ul>
@@ -171,7 +172,7 @@ const Pricing = () => {
                   <ul className="pricing-features">
                     {plan.features.map((feature, index) => (
                       <li key={index}>
-                        <FaRegCheckCircle  className="feature-icon" /> {feature}
+                        <FaRegCheckCircle className="feature-icon" /> {feature}
                       </li>
                     ))}
                   </ul>

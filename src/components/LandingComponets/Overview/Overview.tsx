@@ -150,7 +150,7 @@ const Overview = () => {
 
       <div className="container overview-content text-center">
         <motion.span
-          className="aboutUs-span gradient-text-about"
+          className="aboutUs-funcionar gradient-text-about"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}

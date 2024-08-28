@@ -96,6 +96,11 @@
   margin-bottom: 10px;
 }
 
+.aboutUs-funcionar {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 .aboutUs-heading {
   font-size: 56px;
   margin-bottom: 20px;
@@ -163,11 +168,12 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-@media (width <= 450px){
-  .outline-gradient-container-about{
+@media (width <= 450px) {
+  .outline-gradient-container-about {
     width: 100%;
   }
-  .text-left,.aboutUs-span{
+  .text-left,
+  .aboutUs-span {
     display: block;
     text-align: left !important;
   }

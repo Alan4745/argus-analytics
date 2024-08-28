@@ -27,9 +27,9 @@ const CustomPrevArrow = (props: any) => {
         bottom: -60,
         width: 35,
         height: 35,
-        color: '#000',
+        color: "#000",
         borderRadius: "50%",
-        border: '1px solid #DFDFDF'
+        border: "1px solid #DFDFDF",
       }}
       onClick={onClick}
     >
@@ -53,9 +53,9 @@ const CustomNextArrow = (props: any) => {
         height: 35,
         justifyContent: "center",
         alignItems: "center",
-        color: '#000',
+        color: "#000",
         borderRadius: "50%",
-        border: '1px solid #DFDFDF'
+        border: "1px solid #DFDFDF",
       }}
       onClick={onClick}
     >
@@ -66,7 +66,7 @@ const CustomNextArrow = (props: any) => {
 
 const Testimonials = () => {
   const { t } = useTranslation();
-  
+
   const settings = {
     dots: true,
     infinite: true,
@@ -114,7 +114,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
         >
           {/* Testimonials */}
-          {t('testimonials')}
+          {t("testimonials")}
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -123,7 +123,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
         >
           {/* Satisfied Client From Big Brands */}
-          {t('satisfiedClient')}
+          {t("satisfiedClient")}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -133,76 +133,77 @@ const Testimonials = () => {
         >
           {/* It is a long established fact that a reader will be distracted by the
           readable content. */}
-          {t('longEstablishedFactReader')}
+          {t("longEstablishedFactReader")}
         </motion.p>
       </div>
       <div className="container mt-5">
         <Slider {...settings}>
-          {testimonialsData && testimonialsData.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              className="testimonial-card"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-90 h-90 card-body-testimonial p-1">
-                <div className="row d-flex flex-row">
-                  <div className="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <motion.img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="testimonial-image"
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5 }}
-                      viewport={{ once: true }}
-                    />
+          {testimonialsData &&
+            testimonialsData.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                className="testimonial-card"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-90 h-90 card-body-testimonial p-1">
+                  <div className="row d-flex flex-row">
+                    <div className="col-3 d-flex flex-column justify-content-center align-items-center">
+                      <motion.img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="testimonial-image"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }}
+                      />
+                    </div>
+
+                    <div className="col-9 d-flex flex-column justify-content-center align-items-start p-0">
+                      <motion.h3
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }}
+                      >
+                        {testimonial.name}
+                      </motion.h3>
+                      <motion.p
+                        className="testimonial-position"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        viewport={{ once: true }}
+                      >
+                        {testimonial.position}
+                      </motion.p>
+                    </div>
                   </div>
 
-                  <div className="col-9 d-flex flex-column justify-content-center align-items-start p-0">
-                    <motion.h3
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5 }}
-                      viewport={{ once: true }}
-                    >
-                      {testimonial.name}
-                    </motion.h3>
-                    <motion.p
-                      className="testimonial-position"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
-                      viewport={{ once: true }}
-                    >
-                      {testimonial.position}
-                    </motion.p>
-                  </div>
+                  <motion.p
+                    className="testimonial-comment"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    viewport={{ once: true }}
+                  >
+                    "{testimonial.comment}"
+                  </motion.p>
+                  <motion.p
+                    className="testimonial-date"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    {testimonial.time} - {testimonial.date}
+                  </motion.p>
                 </div>
-
-                <motion.p
-                  className="testimonial-comment"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  "{testimonial.comment}"
-                </motion.p>
-                <motion.p
-                  className="testimonial-date"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  viewport={{ once: true }}
-                >
-                  {testimonial.time} - {testimonial.date}
-                </motion.p>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
         </Slider>
       </div>
     </motion.div>
