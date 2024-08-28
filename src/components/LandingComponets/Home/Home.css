@@ -66,6 +66,7 @@
   -webkit-text-fill-color: transparent;
   font-size: 72px;
   font-family: "SF Pro Display", sans-serif;
+  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 .spacer {
@@ -90,6 +91,7 @@
   cursor: pointer;
   width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
   transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .gradient-button-home:hover {
@@ -105,6 +107,7 @@
   margin: 0; /* Elimina el margen por defecto */
 
   transition: transform 0.3s ease, background-color 0.3s ease;
+  
 }
 
 .outline-gradient-button-container{
@@ -123,6 +126,7 @@
   font-family: "SF Pro Text", sans-serif;
   font-weight: bold;
   width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .outline-gradient-container:hover, .outline-gradient-button-container:hover {
