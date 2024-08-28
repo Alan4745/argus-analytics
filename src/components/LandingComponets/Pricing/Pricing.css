@@ -80,7 +80,7 @@
 }
 
 .feature-icon {
-  color: green;
+  color: #4D2EDB;
   margin-right: 10px;
 }
 
@@ -99,6 +99,12 @@
   width: 100%; /* Ajusta el ancho automáticamente en pantallas grandes */
 }
 
+
+.pricing-card:hover .gradient-button-princing{
+  transition: .5s;
+  background: #fff !important;
+  color: #000 !important;
+}
 .gradient-button-princing:hover {
-  transform: scale(1.1); /* Escala al 110% */
+  transform: scale(1.05) !important; /* Escala al 110% */
 }
