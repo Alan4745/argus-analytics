@@ -6,55 +6,12 @@ import "./Testimonials.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import iconAtras from "./../../../assets/icons/atras.png";
+import arrowBack from "./../../../assets/icons/icons8-izquierda-100.png";
+import arrowNext from "./../../../assets/icons/icons8-derecha-100.png";
 // import iconAdelante from "./../../../assets/icons/proximo.png";
-import imgPerfil from "./../../../assets/perfilpersona.svg";
-import { useTranslation } from "react-i18next";
 
-const testimonialsData = [
-  {
-    image: imgPerfil,
-    name: "John Doe",
-    position: "CEO of Example",
-    comment:
-      "Urna malesuada blandit dui congue viverra amet rhoncus nulla. At ac quis feugiat donec venenatis nullam nam est porta. Libero pulvinar nibh.",
-    date: "2024-07-23",
-    time: "10:30 AM",
-  },
-  {
-    image: imgPerfil,
-    name: "Jane Smith",
-    position: "Marketing Director",
-    comment:
-      "Urna malesuada blandit dui congue viverra amet rhoncus nulla. At ac quis feugiat donec venenatis nullam nam est porta. Libero pulvinar nibh.",
-    date: "2024-07-22",
-    time: "1:15 PM",
-  },
-  {
-    image: imgPerfil,
-    name: "Michael Brown",
-    position: "Product Manager",
-    comment:
-      "Lorem ipsum dolor sit amet consectetur. Est vitae orci vitae ipsum. Aenean id a donec tempus. Non sed amet facilisis facilisis eget praesent. Arcu arcu maecenas vulputate odio aliquam aliquam enim sit mauris.",
-    date: "2024-07-21",
-    time: "4:00 PM",
-  },
-  {
-    image: imgPerfil,
-    name: "Emily White",
-    position: "Sales Manager",
-    comment: "The best company I have worked with.",
-    date: "2024-07-20",
-    time: "9:45 AM",
-  },
-  {
-    image: imgPerfil,
-    name: "David Wilson",
-    position: "HR Manager",
-    comment: "They exceeded my expectations in every way.",
-    date: "2024-07-19",
-    time: "2:30 PM",
-  },
-];
+import { useTranslation } from "react-i18next";
+import { testimonialsData } from "./testimonials.data";
 
 const CustomPrevArrow = (props: any) => {
   const { className, style, onClick } = props;
@@ -76,8 +33,8 @@ const CustomPrevArrow = (props: any) => {
       }}
       onClick={onClick}
     >
-      {/* <img src={iconAtras} alt="Previous" className="img-fluid" /> */}
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M216.4 163.7c5.1 5 5.1 13.3.1 18.4L155.8 243h231.3c7.1 0 12.9 5.8 12.9 13s-5.8 13-12.9 13H155.8l60.8 60.9c5 5.1 4.9 13.3-.1 18.4-5.1 5-13.2 5-18.3-.1l-82.4-83c-1.1-1.2-2-2.5-2.7-4.1-.7-1.6-1-3.3-1-5 0-3.4 1.3-6.6 3.7-9.1l82.4-83c4.9-5.2 13.1-5.3 18.2-.3z"></path></svg>
+      <img src={arrowBack} alt="Previous" className="img-fluid" />
+      {/* <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M216.4 163.7c5.1 5 5.1 13.3.1 18.4L155.8 243h231.3c7.1 0 12.9 5.8 12.9 13s-5.8 13-12.9 13H155.8l60.8 60.9c5 5.1 4.9 13.3-.1 18.4-5.1 5-13.2 5-18.3-.1l-82.4-83c-1.1-1.2-2-2.5-2.7-4.1-.7-1.6-1-3.3-1-5 0-3.4 1.3-6.6 3.7-9.1l82.4-83c4.9-5.2 13.1-5.3 18.2-.3z"></path></svg> */}
     </div>
   );
 };
@@ -102,8 +59,7 @@ const CustomNextArrow = (props: any) => {
       }}
       onClick={onClick}
     >
-      {/* <img src={iconAdelante} alt="Next" className="img-fluid" /> */}
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path></svg>
+      <img src={arrowNext} alt="Next" className="img-fluid right" />
     </div>
   );
 };
@@ -182,7 +138,7 @@ const Testimonials = () => {
       </div>
       <div className="container mt-5">
         <Slider {...settings}>
-          {testimonialsData.map((testimonial, index) => (
+          {testimonialsData && testimonialsData.map((testimonial, index) => (
             <motion.div
               key={index}
               className="testimonial-card"

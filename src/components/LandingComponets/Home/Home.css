@@ -57,6 +57,7 @@
   color: black;
   font-size: 22px;
   font-family: "SF Pro Text", sans-serif;
+  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo para el texto con color degradado */
@@ -92,6 +93,10 @@
   width: auto; /* Ajusta el ancho automáticamente en pantallas grandes */
   transition: transform 0.3s ease, background-color 0.3s ease;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadows{
+  text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .gradient-button-home:hover {

@@ -167,6 +167,10 @@
   .outline-gradient-container-about{
     width: 100%;
   }
+  .text-left,.aboutUs-span{
+    display: block;
+    text-align: left !important;
+  }
 }
 
 /* Botón con borde degradado */

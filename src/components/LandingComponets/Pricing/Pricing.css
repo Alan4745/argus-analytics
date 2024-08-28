@@ -105,6 +105,11 @@
   background: #fff !important;
   color: #000 !important;
 }
+.pricing-card:hover .gradient-button-home{
+  transition: .5s;
+  background: #fff !important;
+  color: #000 !important;
+}
 .gradient-button-princing:hover {
   transform: scale(1.05) !important; /* Escala al 110% */
 }

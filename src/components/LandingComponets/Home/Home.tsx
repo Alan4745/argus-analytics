@@ -21,8 +21,9 @@ const Home = () => {
           >
             <h1 className="text-home-h1">
               <span className="gradient-text">{t("homeTitle1-1")} </span>
-              {t("homeTitle1-2")} <br />
-              {t("homeTitle2-1")}
+              <span className="text-shadows"> {t("homeTitle1-2")} </span>
+              <br />
+              <span className="text-shadows"> {t("homeTitle2-1")}</span>
               <span className="gradient-text"> {t("homeTitle2-2")}</span>
             </h1>
           </motion.div>

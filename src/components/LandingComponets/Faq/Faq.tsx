@@ -53,6 +53,7 @@ const Faq = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          className=" text-left"
           variants={headerVariants}
         >
           {/* Frequently Asked Questions */}
@@ -63,6 +64,7 @@ const Faq = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          className=" text-left"
           variants={headerVariants}
         >
           {/* It is a long established fact that a reader will be <br /> distracted
