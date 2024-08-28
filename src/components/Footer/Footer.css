@@ -56,7 +56,7 @@
 
 .contact-icon {
   margin-right: 10px;
-  color: #9482e9;
+  color: #4D2EDBe9;
 }
 
 .mar-rig {
@@ -97,6 +97,10 @@
     gap: 1rem;
     padding: 0 1rem;
   }
+  
+  .footer-links li{
+    margin-right: 3rem;
+  }
 
   .margin-info {
     margin-left: 0;
@@ -105,7 +109,7 @@
   .widthMobile{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 75%;
   }
 
   .hiddenMobile{

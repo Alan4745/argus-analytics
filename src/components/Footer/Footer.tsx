@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         <div className="row mt-4">
-          <div className="col-12 text-center d-flex flex-wrap-reverse align-items-center w-100 justify-content-between">
+          <div className="text-left d-flex flex-wrap-reverse align-items-center w-100 justify-content-between">
             <p className="text-family-SF-Pro-text">
               © 2024 Pluster.ai by Argus Analytics All rights reserved
             </p>
