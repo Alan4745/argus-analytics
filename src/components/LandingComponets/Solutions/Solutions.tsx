@@ -1,4 +1,3 @@
-import React from "react";
 import "./Solutions.css";
 import { motion } from "framer-motion";
 

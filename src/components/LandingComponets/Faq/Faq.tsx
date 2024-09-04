@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import "./Faq.css";
 import { useTranslation } from "react-i18next";
 import { faqCollapseData, ICollapse } from "./faq.data";
 
 const Faq = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [collapseData, setCollapseData] = useState<ICollapse[]>(faqCollapseData);
+  const [collapseData, setCollapseData] =
+    useState<ICollapse[]>(faqCollapseData);
 
   const headerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -20,14 +21,16 @@ const Faq = () => {
   };
 
   const changeActiveCollapse = (collapse: ICollapse) => {
-    const collapseUnactive = faqCollapseData.filter(col => col.nameCollapse !== collapse.nameCollapse);
-    collapseUnactive.map(col => col.active = false);
+    const collapseUnactive = faqCollapseData.filter(
+      (col) => col.nameCollapse !== collapse.nameCollapse
+    );
+    collapseUnactive.map((col) => (col.active = false));
     collapse.active = !collapse.active;
     setCollapseData(faqCollapseData);
-  }
+  };
 
   const changeIcon = (index: number): string => {
-    return activeIndex === index ? 'fa-solid fa-minus' : 'fa-solid fa-plus';
+    return activeIndex === index ? "fa-solid fa-minus" : "fa-solid fa-plus";
   };
 
   const handleToggle = (index: number) => {
@@ -57,7 +60,7 @@ const Faq = () => {
           variants={headerVariants}
         >
           {/* Frequently Asked Questions */}
-          {t('faqTitle')}
+          {t("faqTitle")}
         </motion.h2>
         <motion.p
           initial="hidden"
@@ -69,13 +72,14 @@ const Faq = () => {
         >
           {/* It is a long established fact that a reader will be <br /> distracted
           by the readable content. */}
-          {t('faqText')}
+          {t("faqText")}
         </motion.p>
       </div>
 
       <div className="container mt-5">
         <div className="accordion" id="accordionExample">
-          {collapseData && collapseData.map((collapse: ICollapse, index: number) => (
+          {collapseData &&
+            collapseData.map((collapse: ICollapse, index: number) => (
               <motion.div
                 className="accordion-item"
                 initial="hidden"
@@ -97,7 +101,11 @@ const Faq = () => {
                     onClick={() => handleToggle(index)}
                   >
                     <div className="d-flex justify-content-between w-100">
-                      <span className={`gradient-text-FAQ ${collapse.active ? 'activeTitle' : ''}`}>
+                      <span
+                        className={`gradient-text-FAQ ${
+                          collapse.active ? "activeTitle" : ""
+                        }`}
+                      >
                         {collapse.title}
                       </span>
 
@@ -127,8 +135,7 @@ const Faq = () => {
                   </div>
                 </div>
               </motion.div>
-            )
-          )}
+            ))}
         </div>
       </div>
     </div>

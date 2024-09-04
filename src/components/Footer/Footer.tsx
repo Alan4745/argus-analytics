@@ -1,11 +1,10 @@
-import React from "react";
 import "./Footer.css";
 import {
   FaFacebook,
   // FaTwitter,
   // FaInstagram,
   FaLinkedin,
-  FaPhoneAlt ,
+  FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
@@ -15,7 +14,7 @@ import logo from "./../../assets/Logo (1).svg"; // Asegúrate de tener la ruta c
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <footer className="footer pt-5 pb-5">
       <div className="container">
@@ -29,8 +28,8 @@ const Footer = () => {
 
             <div>
               <p className="footer-description text-family-SF-Pro-text">
-              {t('footerText')}
-              {/* It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader . */}
+                {t("footerText")}
+                {/* It is a long established fact that a reader will be distracted by the readable content. It is a long established fact that a reader . */}
               </p>
               <div className="footer-social-icons">
                 <FaFacebook className="social-icon" />
@@ -44,51 +43,50 @@ const Footer = () => {
 
           <div className="d-flex flex-wrap">
             {/* Links de otras páginas */}
-          <div className="d-flex">
-            {/* <h5 className="footer-title text-family-SF-Pro-titel">
+            <div className="d-flex">
+              {/* <h5 className="footer-title text-family-SF-Pro-titel">
               Quick Links
             </h5> */}
-            <ul className="footer-links">
-              {/* <li className="text-family-SF-Pro-text">
+              <ul className="footer-links">
+                {/* <li className="text-family-SF-Pro-text">
                 <a href="/home">Home</a>
               </li> */}
-              <li className="text-family-SF-Pro-text">
-                <a href="/about">About Us</a>
-              </li>
-              <li className="text-family-SF-Pro-text">
-                <a href="/services">Solutions</a>
-              </li>
-              <li className="text-family-SF-Pro-text">
-                <a href="/contact">Pricing</a>
-              </li>
-              <li className="text-family-SF-Pro-text">
-                <a href="/contact">Contact</a>
-              </li>
-              {/* <li className="text-family-SF-Pro-text">
+                <li className="text-family-SF-Pro-text">
+                  <a href="/about">About Us</a>
+                </li>
+                <li className="text-family-SF-Pro-text">
+                  <a href="/services">Solutions</a>
+                </li>
+                <li className="text-family-SF-Pro-text">
+                  <a href="/contact">Pricing</a>
+                </li>
+                <li className="text-family-SF-Pro-text">
+                  <a href="/contact">Contact</a>
+                </li>
+                {/* <li className="text-family-SF-Pro-text">
                 <a href="/faq">FAQ</a>
               </li> */}
-            </ul>
-          </div>
+              </ul>
+            </div>
 
-          {/* Información de Contacto */}
-          <div className="margin-info">
-            {/* <h5 className="footer-title text-family-SF-Pro-titel">
+            {/* Información de Contacto */}
+            <div className="margin-info">
+              {/* <h5 className="footer-title text-family-SF-Pro-titel">
               Contact Us
             </h5> */}
-            <p className="text-family-SF-Pro-text">
-              
-              <FaPhoneAlt  className="contact-icon" /> +(502) 2372-2614
-            </p>
-            <p className="text-family-SF-Pro-text">
-              <FaEnvelope className="contact-icon" /> example@argos-io.com
-            </p>
-            <p className="text-family-SF-Pro-text">
-              <FaMapMarkerAlt className="contact-icon" /> Via 3, 1-00, Zona 4,
-              Edificio Tec 3
-              <br />
-              <p className="mar-rig">Guatemala, Guatemala 01004</p>
-            </p>
-          </div>
+              <p className="text-family-SF-Pro-text">
+                <FaPhoneAlt className="contact-icon" /> +(502) 2372-2614
+              </p>
+              <p className="text-family-SF-Pro-text">
+                <FaEnvelope className="contact-icon" /> example@argos-io.com
+              </p>
+              <p className="text-family-SF-Pro-text">
+                <FaMapMarkerAlt className="contact-icon" /> Via 3, 1-00, Zona 4,
+                Edificio Tec 3
+                <br />
+                <p className="mar-rig">Guatemala, Guatemala 01004</p>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -99,15 +97,19 @@ const Footer = () => {
             </p>
 
             <div className="widthMobile">
-              <a href="/privacy-policy" className="footer-link text-family-SF-Pro-text">
+              <a
+                href="/privacy-policy"
+                className="footer-link text-family-SF-Pro-text"
+              >
                 Privacy Policy
-              </a>
-              {" "}
-              <span className="hiddenMobile"> | </span>
-              {" "}
-              <a href="/terms-of-service" className="footer-link text-family-SF-Pro-text" >
+              </a>{" "}
+              <span className="hiddenMobile"> | </span>{" "}
+              <a
+                href="/terms-of-service"
+                className="footer-link text-family-SF-Pro-text"
+              >
                 Terms of Service
-              </a>  
+              </a>
             </div>
           </div>
         </div>

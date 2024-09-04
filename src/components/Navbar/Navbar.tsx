@@ -2,13 +2,10 @@ import "./Navbar.css";
 import logo from "./../../assets/Logo (1).svg";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [lenguague, setLenguaje] = useState<string>("Eng");
   const { i18n } = useTranslation();
   const { t } = useTranslation();
-
-  const navigate = useNavigate();
 
   const changeLenguaje = (lenguage: string) => {
     // Cambiar el idioma

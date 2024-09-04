@@ -1,4 +1,3 @@
-import React from "react";
 import "./Overview.css";
 import { motion } from "framer-motion";
 import image1 from "./../../../assets/icons/iconUser.svg";
