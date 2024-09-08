@@ -11,6 +11,10 @@ const Home = () => {
   return (
     <>
       <div className="home-background" id="home">
+
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
         <Navbar />
         <div className="home-content">
           <motion.div

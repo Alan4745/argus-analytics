@@ -30,11 +30,16 @@
 }
 
 .accordion-body {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "SF Pro Text", sans-serif;
+  line-height: 27px;
   background-color: #ffffff; /* Color de fondo del cuerpo del acordeón */
 }
 
 .gradient-text-FAQ {
-
+  font-size: 24px;
+  font-weight: 700;
   font-family: "SF Pro Display", sans-serif;
 }
 
