@@ -2,12 +2,17 @@
   background-color: #ffffff;
   min-height: 100vh;
   padding: 20px 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .aboutUs-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "SF Pro Display", sans-serif;
+  margin: 2rem 0;
+  /* margin-bottom: 20px; */
+
 }
 
 .slider {
@@ -161,7 +166,7 @@
 /* Contenedor del borde degradado */
 .outline-gradient-container-about {
   display: inline-block;
-  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  /* background: linear-gradient(45deg, #4d2edb, #ab3ae0); */
   padding: 2px; /* Espesor del borde degradado */
   border-radius: 8px; /* Borde redondeado */
   margin: 0; /* Elimina el margen por defecto */
@@ -182,8 +187,10 @@
 /* Botón con borde degradado */
 .outline-gradient-button-about {
   background: #ffffff; /* Fondo del botón transparente */
+  background: transparent; /* Fondo del botón transparente */
   color: black;
   border: none;
+  border: 2px solid #ab3ae0;
   padding: 16px 40px;
   font-size: 16px;
   border-radius: 7px; /* Borde redondeado */

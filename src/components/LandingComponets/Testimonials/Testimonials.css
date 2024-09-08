@@ -68,8 +68,10 @@
 }
 
 .img-fluid.left {
+  width: 15px;
   transform: translateX(-0.6rem);
 }
 .img-fluid.right {
+  width: 15px;
   transform: translateX(0rem);
 }

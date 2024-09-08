@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container">
         <div className="d-flex justify-content-between flex-wrap">
           {/* Logo y Descripción */}
-          <div className="mb-4 mb-md-0 d-flex align-items-start gap-3 flex-wrap width-30 ">
+          <div className="mb-4 mb-md-0 d-flex align-items-start gap-3 flexMobile width-30 ">
             <div className="d-flex">
               <img src={logo} alt="Company Logo" className="footer-logo mb-3" />
               {/* <span className="logo-text fs-4 ms-2">Pulster.ai</span> */}
@@ -98,18 +98,18 @@ const Footer = () => {
 
             <div className="widthMobile">
               <a
+                href="/terms-of-service"
+                className="footer-link text-family-SF-Pro-text"
+              >
+                Terms of Use
+              </a>
+              <a
                 href="/privacy-policy"
                 className="footer-link text-family-SF-Pro-text"
               >
                 Privacy Policy
-              </a>{" "}
-              <span className="hiddenMobile"> | </span>{" "}
-              <a
-                href="/terms-of-service"
-                className="footer-link text-family-SF-Pro-text"
-              >
-                Terms of Service
               </a>
+
             </div>
           </div>
         </div>

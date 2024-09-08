@@ -121,7 +121,8 @@ const Faq = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <strong>
+                    {collapse.description}
+                    {/* <strong>
                       This is the {index + 1} item's accordion body.
                     </strong>{" "}
                     It is shown by default, until the collapse plugin adds the
@@ -131,7 +132,7 @@ const Faq = () => {
                     of this with custom CSS or overriding our default variables.
                     It's also worth noting that just about any HTML can go
                     within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    transition does limit overflow. */}
                   </div>
                 </div>
               </motion.div>

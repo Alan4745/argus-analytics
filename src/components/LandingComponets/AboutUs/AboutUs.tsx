@@ -20,7 +20,7 @@ const AboutUs = () => {
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="text-center mb-4 aboutUs-title">
+          <div className="aboutUs-title">
             JOINING 1000+ SATISFIED CLIENTS
           </div>
         </motion.div>

@@ -82,6 +82,7 @@
 .feature-icon {
   color: #4D2EDB;
   margin-right: 10px;
+  transition: 1s;
 }
 
 .gradient-button-princing {
@@ -109,6 +110,9 @@
   transition: .5s;
   background: #fff !important;
   color: #000 !important;
+}
+.pricing-card:hover .feature-icon{
+  color: #fff !important;
 }
 .gradient-button-princing:hover {
   transform: scale(1.05) !important; /* Escala al 110% */
