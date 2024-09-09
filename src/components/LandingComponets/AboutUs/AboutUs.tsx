@@ -17,7 +17,7 @@ const AboutUs = () => {
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
           <div className="aboutUs-title">JOINING 1000+ SATISFIED CLIENTS</div>
@@ -27,7 +27,7 @@ const AboutUs = () => {
           className="slider"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="slide-track">
@@ -75,7 +75,7 @@ const AboutUs = () => {
           className="container-fluid aboutUs-content mt-2 mt-md-5"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="row">
@@ -83,7 +83,7 @@ const AboutUs = () => {
               className="col-md-6 position-relative d-flex justify-content-center align-items-center aboutUs-column-left order-1 order-sm-0"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="main-image-about">

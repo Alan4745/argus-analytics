@@ -106,7 +106,7 @@ const Testimonials = () => {
     >
       <div className="container overview-content text-center">
         <motion.span
-          className="aboutUs-span gradient-text-about"
+          className="testimonials-span gradient-text-testimonials"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

@@ -141,7 +141,7 @@
 }
 
 .gradient-text-about {
-  background: linear-gradient(-45deg, #4d2edb, #ab3ae0);
+  background: linear-gradient(278deg, #4d2edb 0%, #ab3ae0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "SF Pro Display", sans-serif;
@@ -229,11 +229,17 @@
   }
 
   .aboutUs-heading {
-    font-size: 36px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 35.2px */
   }
 
   .aboutUs-description {
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
   }
 
   .floating-image-left-about {

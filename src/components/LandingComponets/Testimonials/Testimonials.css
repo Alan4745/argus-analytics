@@ -13,6 +13,19 @@
   height: 15rem !important;
 }
 
+.testimonials-span {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.gradient-text-testimonials {
+  background: linear-gradient(278deg, #4d2edb 0%, #ab3ae0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "SF Pro Display", sans-serif;
+  text-transform: uppercase;
+}
+
 .card-body-testimonial {
   background-color: #fff;
   border-radius: 9px;

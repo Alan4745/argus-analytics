@@ -4,6 +4,18 @@
   position: relative;
 }
 
+.overview-span {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.gradient-text-overview {
+  background: linear-gradient(278deg, #4d2edb 0%, #ab3ae0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "SF Pro Display", sans-serif;
+}
+
 .overview-content {
   text-align: center;
   margin-top: 20px;
@@ -14,7 +26,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 61.6px */
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -159,5 +171,12 @@
 
   .connector-right {
     display: none !important;
+  }
+
+  .overview-content h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 35.2px */
   }
 }

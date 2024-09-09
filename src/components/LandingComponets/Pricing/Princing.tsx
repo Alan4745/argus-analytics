@@ -10,7 +10,7 @@ const plans = [
   {
     title: "Basic Plan",
     desc: "Lorem ipsum dolor sit amet consectetur. Ultrices cursus aenean quam ullamcorper.",
-    price: "$50 /Month",
+    price: "$50",
     features: [
       "Coverage of Your Stores",
       "Locations Analysis (Your Stores)",
@@ -23,18 +23,20 @@ const plans = [
   {
     title: "Standard Plan",
     desc: "Lorem ipsum dolor sit amet consectetur. Ultrices cursus aenean quam ullamcorper.",
-    price: "$70 /Month",
+    price: "$70",
     features: [
       "All from the Basic Plan",
       "User Profile of Your Customers",
       "Additional feature",
       "Additional feature",
+      "1 Monthly Hour of Attention",
+      "1 User",
     ],
   },
   {
     title: "Professional Plan",
     desc: "Lorem ipsum dolor sit amet consectetur. Ultrices cursus aenean quam ullamcorper.",
-    price: "$110 /Month",
+    price: "$110",
     features: [
       "All from the Basic Plan",
       "Competitive Environment",
@@ -47,12 +49,13 @@ const plans = [
   {
     title: "Team Edition",
     desc: "Lorem ipsum dolor sit amet consectetur. Ultrices cursus aenean quam ullamcorper.",
-    price: "$180 /Month",
+    price: "$180 ",
     features: [
       "All from the Professional Plan",
       "Part-Time Dedicated Team Member",
       "Historical Data",
       "Extra Data Analysis and Dashboards",
+      "3+ User",
       "3+ User",
     ],
   },
@@ -73,6 +76,7 @@ const Pricing = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
+          infinite: true,
         },
       },
     ],
@@ -90,7 +94,7 @@ const Pricing = () => {
           className="aboutUs-span gradient-text-about"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6 }}
         >
           {/* Pricing */}
@@ -100,7 +104,7 @@ const Pricing = () => {
           className="text-md-center text-start"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {t("pricingSubtitle")}
@@ -110,7 +114,7 @@ const Pricing = () => {
           text-sm-start
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {t("pricingText")}
@@ -125,14 +129,18 @@ const Pricing = () => {
                 className="card pricing-card"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.2 }}
                 variants={cardVariants}
               >
                 <div className="card-body">
                   <h4 className="card-title-princing">{plan.title}</h4>
                   <p className="card-text-princing">{plan.desc}</p>
-                  <h3 className="pricing-price">{plan.price}</h3>
+                  <div className="d-flex justify-content-start align-items-end">
+                    <h3 className="pricing-price">{plan.price}</h3>
+                    <span>/Month</span>
+                  </div>
+                  <span className="limitador"></span>
                   <ul className="pricing-features">
                     {plan.features.map((feature, index) => (
                       <li key={index}>
@@ -160,14 +168,16 @@ const Pricing = () => {
                 className="card pricing-card"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
                 variants={cardVariants}
               >
                 <div className="card-body">
                   <h4 className="card-title">{plan.title}</h4>
                   <p className="card-text">{plan.desc}</p>
-                  <h3 className="pricing-price">{plan.price}</h3>
+                  <h3 className="pricing-price">{plan.price}/Month</h3>
+                  <span className="limitador"></span>
+
                   <ul className="pricing-features">
                     {plan.features.map((feature, index) => (
                       <li key={index}>

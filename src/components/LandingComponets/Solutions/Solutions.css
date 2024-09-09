@@ -70,4 +70,11 @@
     font-size: 16px;
     font-family: "SF Pro Text", sans-serif;
   }
+
+  .text-solutions-h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 35.2px */
+  }
 }
