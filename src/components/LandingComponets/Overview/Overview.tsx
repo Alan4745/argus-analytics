@@ -23,7 +23,7 @@ const Overview = () => {
           className="aboutUs-span gradient-text-about"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
           OVERVIEW
@@ -31,7 +31,7 @@ const Overview = () => {
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Understand <br /> competitive behavior
@@ -39,7 +39,7 @@ const Overview = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           Visualización que muestra el ambiente competitivo de la industria
@@ -55,7 +55,7 @@ const Overview = () => {
               className="overview-box text-center"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               variants={cardVariants}
             >
@@ -81,7 +81,7 @@ const Overview = () => {
               className="overview-box text-center"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               variants={cardVariants}
             >
@@ -107,7 +107,7 @@ const Overview = () => {
               className="overview-box text-center"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 1 }}
               variants={cardVariants}
             >
@@ -136,7 +136,7 @@ const Overview = () => {
           className="main-image-overview"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 1.2 }}
         >
           <img
@@ -152,7 +152,7 @@ const Overview = () => {
           className="aboutUs-funcionar gradient-text-about"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
           cómo funciona
@@ -160,7 +160,7 @@ const Overview = () => {
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Una solución <br /> sencilla a tus dudas.
@@ -168,7 +168,7 @@ const Overview = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           Lorem ipsum dolor sit amet consectetur. Ultrices fermentum viverra
@@ -184,7 +184,7 @@ const Overview = () => {
               className="overview-card shadow-box"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               variants={cardVariants}
             >
@@ -207,7 +207,7 @@ const Overview = () => {
               className="overview-card shadow-box"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               variants={cardVariants}
             >
@@ -232,7 +232,7 @@ const Overview = () => {
               className="overview-card shadow-box"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 1 }}
               variants={cardVariants}
             >
@@ -258,7 +258,7 @@ const Overview = () => {
             className="connector-left arrow-container-connector  flex-column align-items-center justify-content-center"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           >
             <img src={arrow} className="img-fluid" />
@@ -268,7 +268,7 @@ const Overview = () => {
             className="connector-right  flex-column align-items-center justify-content-center arrow-container-connector"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.6, delay: 1.4 }}
           >
             <img src={arrow} className="img-fluid" />

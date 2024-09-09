@@ -7,6 +7,9 @@
 .text-solutions-h2 {
   font-family: "SF Pro Display", sans-serif;
   font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 61.6px */
 }
 
 .solutions-texto-content {
@@ -18,11 +21,6 @@
 .solutions-content {
   text-align: center;
   margin-top: 20px;
-}
-
-.solutions-content h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
 }
 
 .solutions-content span {

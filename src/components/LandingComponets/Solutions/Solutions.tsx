@@ -26,7 +26,7 @@ const Solutions = () => {
           className="text-solutions-h2"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
           Enjoy Our solutions
@@ -35,7 +35,7 @@ const Solutions = () => {
           className="solutions-texto-content"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Lorem ipsum dolor sit amet consectetur. Ac mattis duis vitae orci
@@ -50,7 +50,7 @@ const Solutions = () => {
               className="solution-card"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               variants={cardVariants}
             >
@@ -70,7 +70,7 @@ const Solutions = () => {
               className="solution-card"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               variants={cardVariants}
             >
@@ -95,7 +95,7 @@ const Solutions = () => {
               className="solution-card"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               variants={cardVariants}
             >
@@ -116,7 +116,7 @@ const Solutions = () => {
               className="solution-card"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: 1 }}
               variants={cardVariants}
             >
@@ -137,7 +137,7 @@ const Solutions = () => {
         className="gradient-button-home mt-5"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.6, delay: 1.2 }}
       >
         See all solutions

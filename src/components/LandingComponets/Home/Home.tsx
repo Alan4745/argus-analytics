@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <>
       <div className="home-background" id="home">
-
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
@@ -25,9 +24,13 @@ const Home = () => {
           >
             <h1 className="text-home-h1">
               <span className="gradient-text">{t("homeTitle1-1")} </span>
-              <span className="text-shadows"> {t("homeTitle1-2")} </span>
+              <span className="text-shadows color-h1-text">
+                {t("homeTitle1-2")}
+              </span>
               <br />
-              <span className="text-shadows"> {t("homeTitle2-1")}</span>
+              <span className="text-shadows color-h1-text">
+                {t("homeTitle2-1")}
+              </span>
               <span className="gradient-text"> {t("homeTitle2-2")}</span>
             </h1>
           </motion.div>

@@ -90,7 +90,7 @@ const Pricing = () => {
           className="aboutUs-span gradient-text-about"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
           {/* Pricing */}
@@ -100,7 +100,7 @@ const Pricing = () => {
           className="text-md-center text-start"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {t("pricingSubtitle")}
@@ -110,7 +110,7 @@ const Pricing = () => {
           text-sm-start
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {t("pricingText")}
@@ -125,7 +125,7 @@ const Pricing = () => {
                 className="card pricing-card"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.4 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
                 variants={cardVariants}
               >
@@ -160,7 +160,7 @@ const Pricing = () => {
                 className="card pricing-card"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.4 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
                 variants={cardVariants}
               >

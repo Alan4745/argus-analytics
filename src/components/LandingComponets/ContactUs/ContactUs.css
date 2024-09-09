@@ -34,11 +34,15 @@
 .floating-image-ContactUs.left {
   left: -20%;
   background-image: url("./../../../assets/Union.svg");
+  background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
+  background-position: center; /* Centra la imagen */
 }
 
 .floating-image-ContactUs.right {
   right: -20%;
   background-image: url("./../../../assets/Union.svg");
+  background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
+  background-position: center; /* Centra la imagen */
 }
 
 .contact-info,
@@ -112,15 +116,19 @@ form {
   color: #6a11cb;
 }
 
-.mar-rig-less{
+.mar-rig-less {
   margin-left: 35px;
 }
 
-.contact-icon{
+.contact-icon {
   margin-left: 10px;
 }
 
-@media (width <= 450px){
+.padding-bot {
+  padding: 14px 24px !important;
+}
+
+@media (width <= 450px) {
   .btnWidth {
     width: 100%;
   }

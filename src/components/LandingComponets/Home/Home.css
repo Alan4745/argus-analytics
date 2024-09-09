@@ -13,7 +13,7 @@
   right: 0;
   margin: 0 auto;
   height: 100%;
-  border: 1px solid #E6E8F0;
+  border: 1px solid #e6e8f0;
 }
 .line1 {
   width: 13rem;
@@ -74,20 +74,20 @@
 }
 
 .home-texto-content {
-  color: black;
+  color: #00001f;
   font-size: 22px;
   font-family: "SF Pro Text", sans-serif;
-  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para el texto con color degradado */
 .gradient-text {
-  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  background: linear-gradient(278deg, #4d2edb 0%, #ab3ae0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 72px;
   font-family: "SF Pro Display", sans-serif;
-  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .spacer {
@@ -100,7 +100,7 @@
 
 /* Botón con fondo degradado */
 .gradient-button-home {
-  background: linear-gradient(45deg, #4d2edb, #ab3ae0);
+  background: linear-gradient(278deg, #4d2edb 0%, #ab3ae0 100%);
   color: white;
   border: none;
   padding: 16px 40px;
@@ -115,7 +115,11 @@
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
-.text-shadows{
+.color-h1-text {
+  color: #00001f;
+}
+
+.text-shadows {
   text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -134,7 +138,7 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.outline-gradient-button-container{
+.outline-gradient-button-container {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -156,7 +160,8 @@
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
-.outline-gradient-container:hover, .outline-gradient-button-container:hover {
+.outline-gradient-container:hover,
+.outline-gradient-button-container:hover {
   transform: scale(1.1); /* Escala al 110% */
 }
 

@@ -44,7 +44,7 @@ const Faq = () => {
           className="aboutUs-span gradient-text-about"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
           variants={headerVariants}
         >
@@ -54,7 +54,7 @@ const Faq = () => {
         <motion.h2
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className=" text-left"
           variants={headerVariants}
@@ -65,7 +65,7 @@ const Faq = () => {
         <motion.p
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className=" text-left"
           variants={headerVariants}
@@ -77,52 +77,54 @@ const Faq = () => {
       </div>
 
       <div className="container mt-5">
-        <div className="accordion" id="accordionExample">
-          {collapseData &&
-            collapseData.map((collapse: ICollapse, index: number) => (
-              <motion.div
-                className="accordion-item"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.8 }}
-                transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-                variants={accordionVariants}
-                onClick={() => changeActiveCollapse(collapse)}
-                key={collapse.nameCollapse}
-              >
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#${collapse.nameCollapse}`}
-                    aria-expanded="false"
-                    aria-controls={collapse.nameCollapse}
-                    onClick={() => handleToggle(index)}
+        <div className="row d-flex justify-content-center align-items-center ">
+          <div className="col-md-9">
+            <div className="accordion" id="accordionExample">
+              {collapseData &&
+                collapseData.map((collapse: ICollapse, index: number) => (
+                  <motion.div
+                    className="accordion-item"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.4 }}
+                    transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
+                    variants={accordionVariants}
+                    onClick={() => changeActiveCollapse(collapse)}
+                    key={collapse.nameCollapse}
                   >
-                    <div className="d-flex justify-content-between w-100">
-                      <span
-                        className={`gradient-text-FAQ ${
-                          collapse.active ? "activeTitle" : ""
-                        }`}
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#${collapse.nameCollapse}`}
+                        aria-expanded="false"
+                        aria-controls={collapse.nameCollapse}
+                        onClick={() => handleToggle(index)}
                       >
-                        {collapse.title}
-                      </span>
+                        <div className="d-flex justify-content-between w-100">
+                          <span
+                            className={`gradient-text-FAQ ${
+                              collapse.active ? "activeTitle" : ""
+                            }`}
+                          >
+                            {collapse.title}
+                          </span>
 
-                      <i className={changeIcon(index)}></i>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id={collapse.nameCollapse}
-                  className={`accordion-collapse collapse ${
-                    collapse.nameCollapse === "collapseOne" ? "show" : ""
-                  }`}
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    {collapse.description}
-                    {/* <strong>
+                          <i className={changeIcon(index)}></i>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id={collapse.nameCollapse}
+                      className={`accordion-collapse collapse ${
+                        collapse.nameCollapse === "collapseOne" ? "show" : ""
+                      }`}
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        {collapse.description}
+                        {/* <strong>
                       This is the {index + 1} item's accordion body.
                     </strong>{" "}
                     It is shown by default, until the collapse plugin adds the
@@ -133,10 +135,12 @@ const Faq = () => {
                     It's also worth noting that just about any HTML can go
                     within the <code>.accordion-body</code>, though the
                     transition does limit overflow. */}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

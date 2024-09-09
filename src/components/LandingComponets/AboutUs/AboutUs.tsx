@@ -20,9 +20,7 @@ const AboutUs = () => {
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="aboutUs-title">
-            JOINING 1000+ SATISFIED CLIENTS
-          </div>
+          <div className="aboutUs-title">JOINING 1000+ SATISFIED CLIENTS</div>
         </motion.div>
 
         <motion.div
@@ -74,7 +72,7 @@ const AboutUs = () => {
 
         {/* Nueva sección */}
         <motion.div
-          className="container aboutUs-content mt-2 mt-md-5"
+          className="container-fluid aboutUs-content mt-2 mt-md-5"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}

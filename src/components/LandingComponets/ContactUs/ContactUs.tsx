@@ -70,8 +70,8 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <i className="fas fa-map-marker-alt contact-icon text-white"></i> Via 3,
-                1-00, Zona 4, Edificio Tec 3 <br />
+                <i className="fas fa-map-marker-alt contact-icon text-white"></i>{" "}
+                Via 3, 1-00, Zona 4, Edificio Tec 3 <br />
                 <p className="mar-rig-less">Guatemala, Guatemala 01004</p>
               </motion.p>
               <motion.p
@@ -80,8 +80,8 @@ const ContactUs = () => {
                 animate={isContactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 1 }}
               >
-                <i className="fa-solid fa-phone contact-icon text-white"></i> +(502)
-                2372-2614
+                <i className="fa-solid fa-phone contact-icon text-white"></i>{" "}
+                +(502) 2372-2614
               </motion.p>
             </div>
           </div>
@@ -156,7 +156,7 @@ const ContactUs = () => {
                 </div>
               </div>
 
-              <div className="mb-3 form-check">
+              <div className="mb-5 form-check">
                 <input
                   type="checkbox"
                   className="form-check-input"
@@ -170,7 +170,7 @@ const ContactUs = () => {
 
               <button
                 type="submit"
-                className="btn btn-light fw-bolder btnWidth"
+                className="btn btn-light fw-bolder btnWidth padding-bot"
               >
                 Request a Demo
               </button>

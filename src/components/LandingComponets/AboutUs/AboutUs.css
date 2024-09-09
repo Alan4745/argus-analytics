@@ -12,7 +12,6 @@
   font-family: "SF Pro Display", sans-serif;
   margin: 2rem 0;
   /* margin-bottom: 20px; */
-
 }
 
 .slider {
@@ -29,6 +28,7 @@
 .slide {
   display: inline-block;
   padding: 10px;
+  opacity: 0.5;
 }
 
 @keyframes scroll {
@@ -108,7 +108,11 @@
 
 .aboutUs-heading {
   font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 61.6px */
   margin-bottom: 20px;
+  color: #00001f;
 }
 
 .aboutUs-description {

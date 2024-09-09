@@ -3,6 +3,10 @@
   color: #343a40;
 }
 
+.border-top {
+  border-top: 1px solid #dfdfdf;
+}
+
 .footer-logo {
   max-width: 150px;
 }
@@ -70,7 +74,6 @@
   margin-left: 5rem;
 }
 
-
 .footer-link {
   color: #343a40;
   text-decoration: none;
@@ -91,7 +94,7 @@
   opacity: 0.8;
 }
 
-.widthMobile{
+.widthMobile {
   display: flex;
   justify-content: space-between;
   width: 18%;
@@ -107,11 +110,11 @@
     padding: 0 1rem;
   }
 
-  .flexMobile{
+  .flexMobile {
     flex-wrap: wrap;
   }
-  
-  .footer-links li{
+
+  .footer-links li {
     margin-right: 3rem;
   }
 
@@ -119,14 +122,14 @@
     margin-left: 0;
   }
 
-  .widthMobile{
+  .widthMobile {
     display: flex;
     justify-content: space-between;
     width: 75%;
     margin-bottom: 1rem;
   }
 
-  .hiddenMobile{
+  .hiddenMobile {
     display: none;
   }
 
