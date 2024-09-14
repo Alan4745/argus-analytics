@@ -29,20 +29,17 @@
   transform: translateY(-50%);
   z-index: 1; /* Asegúrate de que estén detrás del contenido */
   opacity: 0.5; /* Transparencia para las imágenes de fondo */
+  background-image: url("./../../../assets/Union.svg");
+  background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
+  background-position: center; /* Centra la imagen */
 }
 
 .floating-image-ContactUs.left {
   left: -20%;
-  background-image: url("./../../../assets/Union.svg");
-  background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
-  background-position: center; /* Centra la imagen */
 }
 
 .floating-image-ContactUs.right {
   right: -20%;
-  background-image: url("./../../../assets/Union.svg");
-  background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
-  background-position: center; /* Centra la imagen */
 }
 
 .contact-info,
@@ -62,7 +59,12 @@ form {
   border-bottom: 2px solid rgba(255, 255, 255, 0.25); /* Borde semitransparente */
   color: white !important; /* Color del texto blanco */
   border-radius: 0;
+  padding-left: 1.2rem !important;
 }
+
+/* .form-control::placeholder{
+  color: #fff !important;
+} */
 
 .form-floating label {
   color: white; /* Color de la etiqueta blanco */
@@ -131,5 +133,21 @@ form {
 @media (width <= 450px) {
   .btnWidth {
     width: 100%;
+  }
+
+  .floating-image-ContactUs{
+    width: 80%;
+    height: 110%;
+    /* transform: translateY(-70%); */
+    top: 15%;
+    background-size: contain;
+  }
+  .floating-image-ContactUs.left {
+    left: -20%;
+    display: none;
+  }
+  
+  .floating-image-ContactUs.right {
+    right: -30%;
   }
 }

@@ -104,9 +104,8 @@ const Faq = () => {
                       >
                         <div className="d-flex justify-content-between w-100">
                           <span
-                            className={`gradient-text-FAQ ${
-                              collapse.active ? "activeTitle" : ""
-                            }`}
+                            className={`gradient-text-FAQ ${collapse.active ? "activeTitle" : ""
+                              }`}
                           >
                             {collapse.title}
                           </span>
@@ -117,9 +116,8 @@ const Faq = () => {
                     </h2>
                     <div
                       id={collapse.nameCollapse}
-                      className={`accordion-collapse collapse ${
-                        collapse.nameCollapse === "collapseOne" ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${collapse.nameCollapse === "collapseOne" ? "show" : ""
+                        }`}
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
