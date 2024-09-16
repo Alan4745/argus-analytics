@@ -2,6 +2,7 @@
   background-color: #f2f0fa;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .text-solutions-h2 {
